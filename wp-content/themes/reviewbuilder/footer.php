@@ -13,8 +13,11 @@
 	</div><!-- #main -->
 
 	<div id="footer" role="contentinfo">
+
 		<div id="colophon">
-		Jason was here locally
+
+		<div id="colophon">jason was here testing merge conflicts
+
 <?php
 	/*
 	 * A sidebar in the footer? Yep. You can can customize
