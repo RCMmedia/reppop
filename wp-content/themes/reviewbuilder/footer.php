@@ -16,7 +16,7 @@
 
 		<div id="colophon">
 
-		<div id="colophon">jason was here testing merge conflicts
+		<div id="colophon">
 
 <?php
 	/*
