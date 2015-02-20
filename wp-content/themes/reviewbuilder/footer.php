@@ -14,7 +14,7 @@
 
 	<div id="footer" role="contentinfo">
 		<div id="colophon">
-
+		Jason was here locally
 <?php
 	/*
 	 * A sidebar in the footer? Yep. You can can customize
