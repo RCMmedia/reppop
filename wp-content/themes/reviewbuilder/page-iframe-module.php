@@ -55,9 +55,9 @@
 		</div>
 	</div><!-- .cform-wrap -->
 	<div class="review-sites">
-		<a href="" class="social-icon facebook"></a>
-		<a href="" class="social-icon google"></a>
-		<a href="" class="social-icon yelp"></a>
+		<a href="<?php the_field('facebook_link') ?>" class="social-icon facebook"></a>
+		<a href="<?php the_field('google_link') ?>" class="social-icon google"></a>
+		<a href="<?php the_field('yelp_link') ?>" class="social-icon yelp"></a>
 	</div>
 
 
