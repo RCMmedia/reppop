@@ -22,9 +22,9 @@
 ?>
 
 <body id="<?php echo $page ?>" <?php body_class(); ?>>
-
+jason was here on his computer
 <div id="wrapper">
-
+	
 		<div class="stars">
 			<ul>
 				<input type="radio"  tabindex="1" id="choice_4_0" value="1star" name="input_4" class="star-1 star">
@@ -43,7 +43,7 @@
 	
 	<div class="cform-wrap">
 		<div class="cta">
-			<p>I'm sorry to hear that you did not have a pleasant dining experience at Blue Smoke Sushi Lounge. Our goal is to provide you with the finest customer service and leave you with a memorable experience. We would love to hear your feedback, and we will do everything that we can to resolve any issues. We value your comments and feedback.<br>
+			<p>I'm sorry to hear that you did not have a pleasant dining experience at Blue Smoke Sushi Lounge. Our goal is to provide you with the finest customer service and leave you with a memorable experience. We would love to hear your feedback, and we will do everything that we can to resolve any issues. We value your comments and feedback..<br>
 - Management</p>
 		</div>
 		<div class="cform">
