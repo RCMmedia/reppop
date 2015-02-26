@@ -29,10 +29,9 @@ a{text-decoration:none;outline:none;cursor:pointer}
 
 /* Main styles */
 #wrapper {
-  border:10px red solid;
   background: none repeat scroll 0 0 transparent;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 500px;
   box-shadow:none;
   
 }
