@@ -24,7 +24,7 @@
 <body id="<?php echo $page ?>" <?php body_class(); ?>>
 
 <div id="wrapper">
-
+Garrett was here
 		<div class="stars">
 			<ul>
 				<input type="radio"  tabindex="1" id="choice_4_0" value="1star" name="input_4" class="star-1 star">
