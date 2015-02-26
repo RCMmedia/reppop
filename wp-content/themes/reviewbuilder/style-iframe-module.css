@@ -31,7 +31,9 @@ a{text-decoration:none;outline:none;cursor:pointer}
 #wrapper {
   background: none repeat scroll 0 0 transparent;
   margin: 0 auto;
+  border:10px red solid;
   max-width: 1000px;
+  box-shadow:none;
   
 }
 .cform-wrap {
