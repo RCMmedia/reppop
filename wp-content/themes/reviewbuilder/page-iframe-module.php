@@ -22,13 +22,9 @@
 ?>
 
 <body id="<?php echo $page ?>" <?php body_class(); ?>>
-jason was here on his computer
+
 <div id="wrapper">
-<<<<<<< HEAD
 	
-=======
-Garrett was here
->>>>>>> origin/staging
 		<div class="stars">
 			<ul>
 				<input type="radio"  tabindex="1" id="choice_4_0" value="1star" name="input_4" class="star-1 star">
