@@ -125,3 +125,8 @@ ul.gfield_radio {
   transition: width 0.5s;
 }
 /* END Star Rating CSS */
+
+
+.garrett {
+	float:left;
+}
