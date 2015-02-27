@@ -10,6 +10,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title><?php wp_title(''); ?></title>
 <link type="text/css" rel="stylesheet" href="<?php bloginfo('template_url') ?>/style-iframe-module.css">
+<style>
+	<?php the_field('style_override') ?>
+</style>
 <?php wp_head(); ?>
 
 </head>
@@ -50,7 +53,7 @@
 			<?php 
 			    $form = get_field('select_form');
 			    gravity_form_enqueue_scripts($form->id, true);
-			    gravity_form($form->id, true, true, false, '', true, 1); 
+			    gravity_form($form->id, false, true, false, '', true, 1); 
 			?>
 		</div>
 	</div><!-- .cform-wrap -->
@@ -64,7 +67,9 @@
 </div><!-- #wrapper -->
 <script>
 		jQuery(document).on("touchstart click", ".stars label", function () {
-  	  jQuery(".stars").fadeOut();
+  	  jQuery(".stars").fadeOut(function() {
+				jQuery('div.block').fadeIn();
+		});
 			
   	});
 	
