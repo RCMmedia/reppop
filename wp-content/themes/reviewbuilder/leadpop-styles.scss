@@ -1,0 +1,205 @@
+@import url('images/leadpop/fonts/webfontkit-20150303-001335/stylesheet.css');
+
+
+* {margin:0;padding:0;} 
+*, *:before, *:after {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+a {outline: none;} 
+a img {border:none}
+
+body {
+	background:#000;
+}
+
+.header, .main, .blue_bar, .testimonials, .inner  {
+	width:100%;
+}
+
+.inner {
+	height:100%;
+	margin:0 auto;
+	width:94%;
+	overflow:hidden;
+	max-width:907px;
+}
+
+.header {
+	height:63px;
+	background:url(images/leadpop/header_bg.png) top left repeat-x;
+	font-family: 'Karla', sans-serif;
+	font-size:20px;
+}
+
+.logo {
+	display:block;
+	margin:0 auto;
+}
+
+a.desktop_back {
+	display:none;
+}
+
+.main {
+	background:url(images/leadpop/bg.jpg) top center repeat-x;
+	height:400px;
+	background-size: cover;
+}
+
+.blue_bar {
+	padding:12px 0;
+	background:#01aef0;
+	border-top:#28bcff 2px solid;
+	line-height:1.1;
+	text-align: center;
+	img {
+		margin-left:4px;
+	}
+	a {
+		color:#003e55;
+		text-decoration:none;
+		span.alexandria_font {
+			font-family: 'alexandriaflfregular';
+			font-size:23px;
+		}
+		span.bevan_font {
+			font-family: 'Bevan', cursive;
+		}
+	}
+}
+
+.testimonials {
+	background:#000;
+	font-family: 'Karla', sans-serif;
+	overflow: hidden;
+	padding-top:35px;
+	.testimonial_quote {
+		margin-top:25px;
+		text-align:center;
+		max-width:435px;
+		display:block;
+		margin:0 auto 35px;
+		h2 {
+			font-size:20px;
+			font-weight:300;
+			margin-bottom:15px;
+			line-height: 1;
+			a {
+				color:#fff;
+				text-decoration: none;
+			}
+		}
+		p {
+			font-style:italic;
+			margin-bottom:15px;
+			a {
+				color:#6f6f6f;
+				text-decoration: none;
+				
+			}
+		}
+	}
+}
+
+img.quote {
+	position: relative;
+	top:4px;
+}
+
+img.left {
+	margin-right:5px;			
+}
+		
+img.quote_right {
+}
+
+.read_more {
+	color:#01aef0;
+}
+
+
+.back_to_top {
+	clear:both;
+	text-align: center;
+	margin-bottom:35px;
+	img {
+		display:block;
+		margin: 0 auto 4px;
+	}
+	a {
+		color:#fff;
+		text-decoration: none;
+		font-weight:400;
+	}
+	span {
+		color:#fff;
+		display:block;
+		font-family: 'Karla', sans-serif;
+		font-size:12px;
+	}
+}
+
+
+@media screen and (min-width: 525px) {
+	br.bluebar_break {
+		display:none;
+	}
+}
+
+
+@media screen and (min-width: 665px) {
+	
+	
+	
+	
+	.logo {
+		float:left;
+	}
+	
+	a.desktop_back {
+		display:block;
+		float:right;
+		color:#fff;
+		text-decoration:none;
+		margin-top:18px;
+		img {
+			margin-left:4px;
+			position:relative;
+			top:1px;
+		}
+	}
+	
+	a.desktop_back:hover {
+		text-decoration:underline;
+	}
+	
+	.testimonials {
+		.testimonial_quote {
+		margin-top:25px;
+		
+		width:45%;
+		margin:0 auto 35px;
+		
+		}
+	}
+	
+	.testimonial_quote.left {
+			float:left;
+		}
+		.testimonial_quote.right {
+			float:right;
+		}
+	
+	
+}
+
+
+@media screen and (max-width: 975px) {
+	
+	br.bluebar_break {
+		display:block;
+	}
+	
+	
+	
+	
+}
