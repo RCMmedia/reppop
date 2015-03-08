@@ -32,11 +32,31 @@ body {
 
 .logo {
 	display:block;
-	margin:0 auto;
+	margin:4px auto 0;
+	width:130px;
 }
 
 .desktop_back {
 	display:none;
+}
+
+.desktop_back.close {
+	display:block;
+	float:right;
+	color:#fff;
+	text-decoration:none;
+	margin-top:19px;
+	cursor: pointer;
+	img {
+		margin-left:4px;
+		position:relative;
+		top:1px;
+	}
+}
+
+
+.desktop_back.close:hover {
+	text-decoration: underline;
 }
 
 .main {
@@ -165,8 +185,16 @@ img.quote_right {
 		max-width:907px;
 		.testimonial_quote {
 			max-width: 569px;
+			cursor: default;
 		}
 	}
+}
+
+
+.overlay .logo {
+	margin:4px 0 0 !important;
+	float:left;
+	
 }
 
 span.client_name {
@@ -185,9 +213,11 @@ span.client_name {
 
 
 @media screen and (min-width: 525px) {
-	br.bluebar_break {
+	
+	div.blue_bar br, div.testimonial_quote h2 br {
 		display:none;
 	}
+	
 }
 
 
@@ -198,6 +228,7 @@ span.client_name {
 	
 	.logo {
 		float:left;
+	
 	}
 	
 	.desktop_back {
@@ -214,7 +245,7 @@ span.client_name {
 		}
 	}
 	
-	a.desktop_back:hover {
+	span.desktop_back:hover {
 		text-decoration:underline;
 	}
 	
@@ -241,7 +272,7 @@ span.client_name {
 
 @media screen and (max-width: 975px) {
 	
-	br.bluebar_break {
+	div.blue_bar br, div.testimonial_quote h2 br {
 		display:block;
 	}
 	

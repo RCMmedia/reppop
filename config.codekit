@@ -9425,6 +9425,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/wp-content\/themes\/reviewbuilder\/images\/leadpop\/eloan.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5369,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/images\/leadpop\/eloan.png",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/images\/leadpop\/eloan.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/themes\/reviewbuilder\/images\/leadpop\/ffs.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -9510,6 +9521,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/wp-content\/themes\/reviewbuilder\/images\/leadpop\/gr.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5563,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/images\/leadpop\/gr.png",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/images\/leadpop\/gr.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/themes\/reviewbuilder\/images\/leadpop\/header_bg.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -9561,6 +9583,17 @@
 		"initialSize": 1594,
 		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/images\/leadpop\/quote-right.png",
 		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/images\/leadpop\/quote-right.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/themes\/reviewbuilder\/images\/leadpop\/supreme.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4081,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/images\/leadpop\/supreme.png",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/images\/leadpop\/supreme.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -9781,6 +9814,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/themes\/reviewbuilder\/min\/reppop-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/min\/reppop-min.js",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/min\/min\/reppop-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/wp-content\/themes\/reviewbuilder\/onecolumn-page.php": {
 		"fileType": 8192,
