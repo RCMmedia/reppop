@@ -25,7 +25,7 @@
 	<style type="text/css">
 		/* ie 8 */
 	.main  {
-		-ms-behavior: url(<?php bloginfo( 'template_directory' ); ?>/background-size-polyfill-gh-pages/backgroundsize.min.htc);
+		-ms-behavior: url("http://jasonmonsef.com/reppop/wp-content/themes/reviewbuilder/background-size-polyfill-gh-pages/backgroundsize.min.htc/background-size-polyfill-gh-pages/backgroundsize.min.htc");
 	} 
 	</style>
 	<?php wp_head(); ?>
