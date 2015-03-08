@@ -23,6 +23,17 @@
 	<?php wp_head(); ?>
 	<script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/min/reppop-min.js"></script>
 	<script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/respond-master/src/respond.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function(){
+			jQuery(document).bind('gform_page_loaded', function(event, form_id, current_page){
+			jQuery(document).scrollTop(200);
+				// _gaq.push(['_trackPageview'], window.location.pathname + current_page); this is g.a. tracking bewteen pages
+				// transitions go here
+				
+			});
+			jQuery('.gform_page').addClass('sandiego');
+    });
+	</script>
 </head>
 <body id="<?php echo $page ?>" <?php body_class(); ?>>
 	
@@ -34,7 +45,9 @@
 	</div><!-- header -->
 	<div class="main">
 		<div class="inner">
-			
+			<div class="form" style="margin:500px 0;">
+				<?php echo do_shortcode('[gravityform id="2" title="false" description="false" ajax="true"]') ?>
+			</div><!-- form -->
 		</div><!-- inner -->
 	</div><!-- main -->
 	<div class="blue_bar">

@@ -71,7 +71,6 @@ body {
 
 .main {
   background: url(images/leadpop/bg.jpg) top center repeat-x;
-  height: 400px;
   background-size: cover;
 }
 
@@ -210,6 +209,60 @@ span.client_name {
   visibility: visible;
   z-index: 20;
   transition: all 0.5s ease;
+}
+
+/* gform */
+.gform_wrapper .gf_progressbar_wrapper {
+  clear: both;
+  margin: 0 0 0.5em;
+  padding: 0 0 1em;
+  width: 99%;
+}
+
+.gform_wrapper .gf_progressbar_wrapper h3.gf_progressbar_title {
+  clear: both;
+  font-size: 0.813em;
+  line-height: 1em !important;
+  margin: 0 0 0.375em !important;
+  opacity: 0.6;
+  padding: 0 !important;
+  position: relative;
+  top: 45px;
+}
+
+.gform_wrapper .gf_progressbar {
+  background-color: #fff;
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+  height: 20px;
+  line-height: 20px !important;
+  overflow: hidden;
+  width: 99%;
+}
+
+.gform_wrapper .percentbar_green {
+  background-color: #94dc21;
+  background-repeat: repeat-x;
+  color: #fff;
+}
+
+.gform_wrapper .gf_progressbar_percentage {
+  font-family: helvetica,arial,sans-serif;
+  font-size: 13px !important;
+  height: 20px;
+  text-align: right;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.gform_wrapper .gf_progressbar_percentage span {
+  display: block;
+  float: right;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: auto;
 }
 
 @media screen and (min-width: 525px) {
