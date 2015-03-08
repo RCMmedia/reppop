@@ -12,8 +12,6 @@
 	 * @since Twenty Ten 1.0
 	 */
 	?> 
-	
-	
 	<!DOCTYPE html>
 	<html>
 	<head>
@@ -22,12 +20,6 @@
 	<title><?php wp_title(''); ?></title>
 	<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory') ?>/leadpop-styles.css">
 	<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Bevan|Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-	<style type="text/css">
-		/* ie 8 */
-	.main  {
-		-ms-behavior: url("http://jasonmonsef.com/reppop/wp-content/themes/reviewbuilder/background-size-polyfill-gh-pages/backgroundsize.min.htc/background-size-polyfill-gh-pages/backgroundsize.min.htc");
-	} 
-	</style>
 	<?php wp_head(); ?>
 	<script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/min/reppop-min.js"></script>
 
