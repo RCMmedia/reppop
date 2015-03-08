@@ -167,7 +167,7 @@ img.left {
 .overlay {
   height: 100%;
   background: black;
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(0, 0, 0, 0.98);
   position: fixed;
   z-index: -1;
   top: 0;
