@@ -333,7 +333,7 @@ jQuery(document).ready(function(){
 			
 			
 
-	function movin_the_bar_like_a_boss() {
+	function movin_the_bar() {
 		jQuery('div.gf_progressbar_wrapper').each(function(i,e){
 		    fielddesc = jQuery('<div>').append(jQuery(e).clone()).remove().html();
 		    jQuery(e).siblings('div.gform_body').after(fielddesc);
@@ -341,10 +341,10 @@ jQuery(document).ready(function(){
 		});
 	}
 
-	movin_the_bar_like_a_boss();
+	movin_the_bar();
 
 	jQuery(document).bind('gform_page_loaded', function(){
-		movin_the_bar_like_a_boss();
+		movin_the_bar();
 	});
 
 	
