@@ -11,7 +11,7 @@ body {
 	background:#000;
 }
 
-.header, .main, .blue_bar, .testimonials, .inner  {
+.header, .main, .blue_bar, .testimonials, .inner, .overlay  {
 	width:100%;
 }
 
@@ -27,7 +27,7 @@ body {
 	height:63px;
 	background:url(images/leadpop/header_bg.png) top left repeat-x;
 	font-family: 'Karla', sans-serif;
-	font-size:20px;
+	font-size:18px;
 }
 
 .logo {
@@ -35,7 +35,7 @@ body {
 	margin:0 auto;
 }
 
-a.desktop_back {
+.desktop_back {
 	display:none;
 }
 
@@ -71,34 +71,30 @@ a.desktop_back {
 	background:#000;
 	font-family: 'Karla', sans-serif;
 	overflow: hidden;
-	padding-top:35px;
-	.testimonial_quote {
-		margin-top:25px;
-		text-align:center;
-		max-width:435px;
-		display:block;
-		margin:0 auto 35px;
-		h2 {
-			font-size:20px;
-			font-weight:300;
-			margin-bottom:15px;
-			line-height: 1;
-			a {
-				color:#fff;
-				text-decoration: none;
-			}
-		}
-		p {
-			font-style:italic;
-			margin-bottom:15px;
-			a {
-				color:#6f6f6f;
-				text-decoration: none;
-				
-			}
-		}
+	padding-top:20px;
+}
+	
+	
+.testimonial_quote {
+	cursor: pointer;
+	text-align:center;
+	max-width:435px;
+	display:block;
+	margin:0 auto 35px;
+	h2 {
+		font-size:20px;
+		font-weight:300;
+		margin-bottom:15px;
+		line-height: 1;
+		color:#fff;
+	}
+	p {
+		font-style:italic;
+		margin-bottom:15px;
+		color:#6f6f6f;
 	}
 }
+
 
 img.quote {
 	position: relative;
@@ -116,11 +112,17 @@ img.quote_right {
 	color:#01aef0;
 }
 
+.read_more:hover {
+	text-decoration:underline;
+	
+}
 
 .back_to_top {
-	clear:both;
-	text-align: center;
-	margin-bottom:35px;
+	clear: both;
+  margin: 0 auto 35px;
+  text-align: center;
+  width: 240px;
+  cursor: pointer;
 	img {
 		display:block;
 		margin: 0 auto 4px;
@@ -136,6 +138,49 @@ img.quote_right {
 		font-family: 'Karla', sans-serif;
 		font-size:12px;
 	}
+}
+
+
+.overlay {
+	height:100%;
+	background:rgb(0,0,0);
+	background:rgba(0,0,0,0.95);
+	position:fixed;
+	z-index:-1;
+	top:0;
+	left:0;
+	font-family: 'Karla', sans-serif;
+	opacity: 0;
+	visibility: hidden;
+	transition:all 0.5s ease;
+	.header {
+		position:fixed;
+		top:0;
+		left:0;
+		z-index:15;
+	}
+	.overlay_inner {
+		margin:100px auto 0;
+		width:90%;
+		max-width:907px;
+		.testimonial_quote {
+			max-width: 569px;
+		}
+	}
+}
+
+span.client_name {
+	display:block;
+	margin-bottom: 17px;
+	text-decoration: none;
+	color:#fff;
+}
+
+.overlay.open {
+	opacity: 1;
+	visibility: visible;
+	z-index:20;
+	transition:all 0.5s ease;
 }
 
 
@@ -155,12 +200,13 @@ img.quote_right {
 		float:left;
 	}
 	
-	a.desktop_back {
+	.desktop_back {
 		display:block;
 		float:right;
 		color:#fff;
 		text-decoration:none;
-		margin-top:18px;
+		margin-top:19px;
+		cursor: pointer;
 		img {
 			margin-left:4px;
 			position:relative;
@@ -174,10 +220,10 @@ img.quote_right {
 	
 	.testimonials {
 		.testimonial_quote {
-		margin-top:25px;
+		
 		
 		width:45%;
-		margin:0 auto 35px;
+		margin:0px auto 35px;
 		
 		}
 	}

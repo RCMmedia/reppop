@@ -22,7 +22,7 @@ body {
   background: #000;
 }
 
-.header, .main, .blue_bar, .testimonials, .inner {
+.header, .main, .blue_bar, .testimonials, .inner, .overlay {
   width: 100%;
 }
 
@@ -38,7 +38,7 @@ body {
   height: 63px;
   background: url(images/leadpop/header_bg.png) top left repeat-x;
   font-family: 'Karla', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .logo {
@@ -46,7 +46,7 @@ body {
   margin: 0 auto;
 }
 
-a.desktop_back {
+.desktop_back {
   display: none;
 }
 
@@ -82,32 +82,27 @@ a.desktop_back {
   background: #000;
   font-family: 'Karla', sans-serif;
   overflow: hidden;
-  padding-top: 35px;
+  padding-top: 20px;
 }
-.testimonials .testimonial_quote {
-  margin-top: 25px;
+
+.testimonial_quote {
+  cursor: pointer;
   text-align: center;
   max-width: 435px;
   display: block;
   margin: 0 auto 35px;
 }
-.testimonials .testimonial_quote h2 {
+.testimonial_quote h2 {
   font-size: 20px;
   font-weight: 300;
   margin-bottom: 15px;
   line-height: 1;
-}
-.testimonials .testimonial_quote h2 a {
   color: #fff;
-  text-decoration: none;
 }
-.testimonials .testimonial_quote p {
+.testimonial_quote p {
   font-style: italic;
   margin-bottom: 15px;
-}
-.testimonials .testimonial_quote p a {
   color: #6f6f6f;
-  text-decoration: none;
 }
 
 img.quote {
@@ -123,10 +118,16 @@ img.left {
   color: #01aef0;
 }
 
+.read_more:hover {
+  text-decoration: underline;
+}
+
 .back_to_top {
   clear: both;
+  margin: 0 auto 35px;
   text-align: center;
-  margin-bottom: 35px;
+  width: 240px;
+  cursor: pointer;
 }
 .back_to_top img {
   display: block;
@@ -144,6 +145,48 @@ img.left {
   font-size: 12px;
 }
 
+.overlay {
+  height: 100%;
+  background: black;
+  background: rgba(0, 0, 0, 0.95);
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  font-family: 'Karla', sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+.overlay .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+}
+.overlay .overlay_inner {
+  margin: 100px auto 0;
+  width: 90%;
+  max-width: 907px;
+}
+.overlay .overlay_inner .testimonial_quote {
+  max-width: 569px;
+}
+
+span.client_name {
+  display: block;
+  margin-bottom: 17px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.overlay.open {
+  opacity: 1;
+  visibility: visible;
+  z-index: 20;
+  transition: all 0.5s ease;
+}
+
 @media screen and (min-width: 525px) {
   br.bluebar_break {
     display: none;
@@ -154,14 +197,15 @@ img.left {
     float: left;
   }
 
-  a.desktop_back {
+  .desktop_back {
     display: block;
     float: right;
     color: #fff;
     text-decoration: none;
-    margin-top: 18px;
+    margin-top: 19px;
+    cursor: pointer;
   }
-  a.desktop_back img {
+  .desktop_back img {
     margin-left: 4px;
     position: relative;
     top: 1px;
@@ -172,9 +216,8 @@ img.left {
   }
 
   .testimonials .testimonial_quote {
-    margin-top: 25px;
     width: 45%;
-    margin: 0 auto 35px;
+    margin: 0px auto 35px;
   }
 
   .testimonial_quote.left {
