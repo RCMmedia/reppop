@@ -22,7 +22,10 @@
 	<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Bevan|Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	<?php wp_head(); ?>
 	<script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/min/reppop-min.js"></script>
-
+	<!--[if lt IE 9]>
+    <script src="<?php bloginfo( 'template_directory' ); ?>/html5shiv.min.js"></script>
+    <script src="<?php bloginfo( 'template_directory' ); ?>/html5shiv-printshiv.min.js"></script>
+<![endif]-->
 </head>
 <body id="<?php echo $page ?>" <?php body_class(); ?>>
 	
