@@ -92,9 +92,6 @@ body {
   font-family: 'alexandriaflfregular';
   font-size: 23px;
 }
-.blue_bar a span.bevan_font {
-  font-family: 'Bevan', cursive;
-}
 
 .testimonials {
   background: #000;
@@ -212,59 +209,213 @@ span.client_name {
 }
 
 /* gform */
-.gform_wrapper .gf_progressbar_wrapper {
-  clear: both;
-  margin: 0 0 0.5em;
-  padding: 0 0 1em;
-  width: 99%;
+.form {
+  max-width: 612px;
+  margin: 38px auto 27px;
 }
 
-.gform_wrapper .gf_progressbar_wrapper h3.gf_progressbar_title {
-  clear: both;
-  font-size: 0.813em;
-  line-height: 1em !important;
-  margin: 0 0 0.375em !important;
-  opacity: 0.6;
-  padding: 0 !important;
-  position: relative;
-  top: 45px;
-}
-
-.gform_wrapper .gf_progressbar {
-  background-color: #fff;
-  background-position: center bottom;
-  background-repeat: repeat-x;
-  border: 1px solid #eee;
-  border-radius: 4px;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
-  height: 20px;
-  line-height: 20px !important;
-  overflow: hidden;
-  width: 99%;
-}
-
-.gform_wrapper .percentbar_green {
-  background-color: #94dc21;
-  background-repeat: repeat-x;
+.gform_wrapper {
   color: #fff;
 }
-
-.gform_wrapper .gf_progressbar_percentage {
-  font-family: helvetica,arial,sans-serif;
-  font-size: 13px !important;
-  height: 20px;
-  text-align: right;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+.gform_wrapper ul {
+  list-style: none;
+}
+.gform_wrapper ul li {
+  margin-bottom: 30px;
+  position: relative;
+}
+.gform_wrapper ul li input, .gform_wrapper ul li textarea {
+  background: #e4f4fd;
+  border: none;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  font-family: 'Quicksand', sans-serif;
+  padding: 0px 0 0 10px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  font-size: 17px;
+}
+.gform_wrapper ul li textarea {
+  width: 100% !important;
+  min-height: 150px !important;
+  padding: 7px 0 0 10px;
 }
 
-.gform_wrapper .gf_progressbar_percentage span {
-  display: block;
+.gform_page_footer {
+  width: 225px;
   float: right;
-  margin-left: 5px;
-  margin-right: 5px;
-  width: auto;
+  margin-bottom: 13px;
 }
 
+.gform_next_button, .gform_previous_button {
+  background: #ff9000;
+  border: 2.5px solid #fff;
+  font-size: 23px;
+  font-family: 'alexandriaflfregular';
+  color: #fff;
+  padding: 2px 15px;
+  line-height: 1;
+  -webkit-border-radius: 19px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-appearance: none;
+  cursor: pointer;
+  margin-left: 10px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 30;
+}
+
+.gform_next_button {
+  float: right;
+}
+
+.gform_previous_button {
+  float: left;
+}
+
+span.gfield_required {
+  display: none;
+}
+
+.gsection {
+  text-align: center;
+}
+.gsection .gsection_description {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 21px;
+  line-height: 1;
+}
+.gsection .gsection_description .my_title {
+  line-height: 1.1;
+  font-size: 26px;
+  font-family: 'alexandriaflfregular';
+}
+
+span.bevan_font {
+  font-family: 'Bevan', cursive;
+}
+
+.secure {
+  color: #fff;
+  font-family: "alexandriaflfregular";
+  left: 0;
+  overflow: hidden;
+  position: relative;
+  top: -92px;
+  z-index: 0;
+}
+.secure .lock {
+  float: left;
+  margin-right: 5px;
+}
+.secure .disclaimer {
+  float: left;
+  line-height: 1;
+  padding-top: 2px;
+}
+.secure .disclaimer span.never_sold {
+  font-family: 'Karla', sans-serif;
+  font-size: 13.4px;
+  font-weight: 300;
+}
+
+div.gfield_description.validation_message {
+  bottom: -18px;
+  color: #003e55;
+  font-family: "Karla",sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  left: 0;
+  position: absolute;
+}
+
+div.validation_error {
+  display: none;
+}
+
+.gf_progressbar_wrapper {
+  clear: both !important;
+  margin: 0 0 0.5em !important;
+  width: 100% !important;
+}
+
+.gf_progressbar_wrapper h3.gf_progressbar_title {
+  clear: both !important;
+  font-size: 0.813em !important;
+  line-height: 1em !important;
+  margin: 0 0 0.375em !important;
+  font-family: "Karla",sans-serif;
+  font-weight: 300;
+  padding: 0 !important;
+  position: relative !important;
+  top: 45px !important;
+}
+
+.gf_progressbar {
+  background-color: #e4f4fd !important;
+  background-position: center bottom !important;
+  background-repeat: repeat-x !important;
+  border-radius: 4px !important;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  height: 21px !important;
+  line-height: 20px !important;
+  overflow: hidden !important;
+  width: 100% !important;
+}
+
+.percentbar_green {
+  background-color: #94dc21 !important;
+  background-repeat: repeat-x !important;
+  color: #fff !important;
+}
+
+.gf_progressbar_percentage {
+  font-family: helvetica,arial,sans-serif !important;
+  font-size: 13px !important;
+  height: 21px !important;
+  text-align: right !important;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5) !important;
+}
+
+.gf_progressbar_percentage span {
+  display: block !important;
+  float: right !important;
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+  width: auto !important;
+}
+
+.gform_wrapper.fadeaway, .secure.fadeaway {
+  transition: all 0.5s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.gform_wrapper, .secure {
+  transition: all 0.5s ease;
+  opacity: 1;
+  visibility: visible;
+}
+
+/*
+.gform_page_2_2, .gform_page_2_3, .gform_page_2_4 {
+	opacity: 0;
+	visibility: hidden;
+	
+}
+
+
+.gform_page_2_2.fadein, .gform_page_2_3.fadein, .gform_page_2_4.fadein {
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.5s ease;
+}
+*/
 @media screen and (min-width: 525px) {
   div.blue_bar br, div.testimonial_quote h2 br {
     display: none;

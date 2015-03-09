@@ -327,7 +327,7 @@ jQuery(document).ready(function(){
 			jQuery(".overlay").niceScroll().hide();
 			
 			
-			
+	//		
 			
 			
 			
@@ -348,11 +348,42 @@ jQuery(document).ready(function(){
 	});
 
 	
+	//		
 			
-			
-			
-			
-			
+
+	
+	/*
+jQuery(".gfield").each(function(e) {
+        if (e != 0)
+            jQuery(this).hide();
+    });
+    
+    jQuery("#next").click(function(){
+        if (jQuery(".gfield:visible").next().length != 0)
+            jQuery(".gfield:visible").next().show().prev().hide();
+        else {
+            jQuery(".gfield:visible").hide();
+            jQuery(".gfield:first").show();
+        }
+        return false;
+    });
+
+    jQuery("#prev").click(function(){
+        if (jQuery(".gfield:visible").prev().length != 0)
+            jQuery(".gfield:visible").prev().show().next().hide();
+        else {
+            jQuery(".gfield:visible").hide();
+            jQuery(".gfield:last").show();
+        }
+        return false;
+    });		
+*/
+	
+	
+	
+	
+	
+	// end of document load	
 			
 		});
 		

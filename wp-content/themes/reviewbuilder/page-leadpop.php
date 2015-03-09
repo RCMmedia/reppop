@@ -25,29 +25,88 @@
 	<script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/respond-master/src/respond.js"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function(){
+			
+			// Add css3 fadeins on click events 
+			// Next
+			jQuery(".gform_next_button").click(function() {
+				jQuery('.gform_wrapper').addClass('fadeaway');
+				jQuery('.secure').addClass('fadeaway'); // my secure lock image is outside of gforms
+			});
+			// Back
+			jQuery(".gform_previous_button").click(function() {
+				jQuery('.gform_wrapper').addClass('fadeaway');
+				jQuery('.secure').addClass('fadeaway');
+			});
+			
+			
+			// This is what binds to the document ready after validation happens on gform next button
+			
 			jQuery(document).bind('gform_page_loaded', function(event, form_id, current_page){
-			jQuery(document).scrollTop(200);
+			  
+			  
+			  jQuery(document).scrollTop(0); // this changes the anchor point on multi page to the top of the page
+				
+				
 				// _gaq.push(['_trackPageview'], window.location.pathname + current_page); this is g.a. tracking bewteen pages
-				// transitions go here
+				
+				
+				// This removes the class once gform_page_loaded is binded to document  
+				
+				jQuery(".gform_wrapper").removeClass('fadeaway');	
+				jQuery(".secure").removeClass('fadeaway');	
+				
+				// Then I start over, add the click function in gform_page_loaded, its janky but it seems to be working
+				
+				//Next
+				jQuery(".gform_next_button").click(function() {
+					jQuery('.gform_wrapper').addClass('fadeaway');
+					jQuery('.secure').addClass('fadeaway');
+				});
+				// Back
+				jQuery(".gform_previous_button").click(function() {
+					jQuery('.gform_wrapper').addClass('fadeaway');
+					jQuery('.secure').addClass('fadeaway');
+				});
+						
 				
 			});
-			jQuery('.gform_page').addClass('sandiego');
-    });
+		});
 	</script>
 </head>
 <body id="<?php echo $page ?>" <?php body_class(); ?>>
 	
 	<div class="header">
 		<div class="inner">
-			<a href="http://leadpops.com"><img class="logo" src="<?php bloginfo('template_directory') ?>/images/leadpop/logo.png"/></a>
-			<a href="http://leadpops.com" class="desktop_back">Back to Main Site<img src="<?php bloginfo('template_directory') ?>/images/leadpop/tri.png"/></a>
+			<a href="http://leadpops.com" target="_blank"><img class="logo" src="<?php bloginfo('template_directory') ?>/images/leadpop/logo.png"/></a>
+			<a href="http://leadpops.com" target="_blank" class="desktop_back">Back to Main Site<img src="<?php bloginfo('template_directory') ?>/images/leadpop/tri.png"/></a>
 		</div><!-- inner -->
 	</div><!-- header -->
 	<div class="main">
 		<div class="inner">
-			<div class="form" style="margin:500px 0;">
+			<div class="form">
 				<?php echo do_shortcode('[gravityform id="2" title="false" description="false" ajax="true"]') ?>
+				<div class="secure">
+					<img class="lock" src="<?php bloginfo('template_directory') ?>/images/leadpop/lock.png"/>
+					<div class="disclaimer">
+						Privacy & Security <span class="bevan_font">Guaranteed.</span><br/>
+						<span class="never_sold">Your Data is Never Sold or Shared. Ever.</span>
+				</div><!-- secure -->
+
+			
 			</div><!-- form -->
+			<!--
+<a id="prev">prev</a>
+			<a id="next">next</a>
+
+			<div id="my_progressbar" class="progressbar_wrapper">
+				<h3 class="gf_progressbar_title">Step 1 of 4 </h3>
+				<div class="gf_progressbar">
+					<div class="gf_progressbar_percentage percentbar_green percentbar_25" style="width:25%;">
+						<span>25%</span>
+					</div>
+				</div>
+			</div>
+-->
 		</div><!-- inner -->
 	</div><!-- main -->
 	<div class="blue_bar">

@@ -598,6 +598,9 @@ wp_enqueue_script('jquery', false, array(), false, false);
 }
 add_filter('wp_enqueue_scripts','insert_jquery',1);
 
+// disables gravity form anchor on ajax load
+
+// add_filter('gform_confirmation_anchor', '__return_false');
 
 
 
