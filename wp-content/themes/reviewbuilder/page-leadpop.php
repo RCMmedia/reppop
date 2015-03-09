@@ -18,7 +18,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
 	<title><?php wp_title(''); ?></title>
-	<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory') ?>/leadpop-styles.css">
+	<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory') ?>/leadpop-styles.css?v=3">
 	<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Bevan|Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	<?php wp_head(); ?>
 	<script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/min/reppop-min.js"></script>
@@ -60,8 +60,7 @@
 				jQuery(".gform_wrapper").removeClass('fadeaway');	
 				jQuery(".secure").removeClass('fadeaway');	
 				
-				// Then I start over, add the click function in gform_page_loaded, its janky but it seems to be working jjjjyeahhhh
-				
+				// Then I start over, add the click function in gform_page_loaded				
 				//Next (GLobal)
 				jQuery(".gform_next_button").click(function() {
 					jQuery('.gform_wrapper').addClass('fadeaway');
