@@ -27,13 +27,18 @@
 		jQuery(document).ready(function(){
 			
 			// Add css3 fadeins on click events 
-			// Next
+			// Next (Global)
 			jQuery(".gform_next_button").click(function() {
 				jQuery('.gform_wrapper').addClass('fadeaway');
 				jQuery('.secure').addClass('fadeaway'); // my secure lock image is outside of gforms
 			});
-			// Back
+			// Back (Global)
 			jQuery(".gform_previous_button").click(function() {
+				jQuery('.gform_wrapper').addClass('fadeaway');
+				jQuery('.secure').addClass('fadeaway');
+			});
+			// Submit (Global)
+			jQuery("#gform_submit_button_2").click(function() {
 				jQuery('.gform_wrapper').addClass('fadeaway');
 				jQuery('.secure').addClass('fadeaway');
 			});
@@ -55,18 +60,27 @@
 				jQuery(".gform_wrapper").removeClass('fadeaway');	
 				jQuery(".secure").removeClass('fadeaway');	
 				
-				// Then I start over, add the click function in gform_page_loaded, its janky but it seems to be working
+				// Then I start over, add the click function in gform_page_loaded, its janky but it seems to be working jjjjyeahhhh
 				
-				//Next
+				//Next (GLobal)
 				jQuery(".gform_next_button").click(function() {
 					jQuery('.gform_wrapper').addClass('fadeaway');
 					jQuery('.secure').addClass('fadeaway');
 				});
-				// Back
+				// Back (Global)
 				jQuery(".gform_previous_button").click(function() {
 					jQuery('.gform_wrapper').addClass('fadeaway');
 					jQuery('.secure').addClass('fadeaway');
 				});
+				// Submit (Global)
+				jQuery("#gform_submit_button_2").click(function() {
+					jQuery('.gform_wrapper').addClass('fadeaway');
+					jQuery('.secure').addClass('fadeaway');
+				});
+				
+				jQuery('.gforms_confirmation_message_2').addClass('fadein_thankyou');
+				
+				
 						
 				
 			});

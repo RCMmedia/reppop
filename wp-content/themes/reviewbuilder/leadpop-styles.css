@@ -29,7 +29,7 @@ body {
 .inner {
   height: 100%;
   margin: 0 auto;
-  width: 94%;
+  width: 93%;
   overflow: hidden;
   max-width: 907px;
 }
@@ -242,20 +242,29 @@ span.client_name {
   min-height: 150px !important;
   padding: 7px 0 0 10px;
 }
-
-.gform_page_footer {
-  width: 225px;
-  float: right;
-  margin-bottom: 13px;
+.gform_wrapper ul li input {
+  height: 35px;
+  width: 100%;
+}
+.gform_wrapper ul li#field_2_10, .gform_wrapper ul li#field_2_18, .gform_wrapper ul li#field_2_8, .gform_wrapper ul li#field_2_9 {
+  width: 100%;
+  margin-bottom: 25px;
 }
 
-.gform_next_button, .gform_previous_button {
+.gform_page_footer {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.gform_next_button, .gform_previous_button, #gform_submit_button_2 {
   background: #ff9000;
   border: 2.5px solid #fff;
-  font-size: 23px;
+  font-size: 28px;
   font-family: 'alexandriaflfregular';
   color: #fff;
-  padding: 2px 15px;
+  padding: 4px 22px;
   line-height: 1;
   -webkit-border-radius: 19px;
   -moz-border-radius: 15px;
@@ -267,15 +276,9 @@ span.client_name {
   -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
   position: relative;
-  z-index: 30;
-}
-
-.gform_next_button {
-  float: right;
-}
-
-.gform_previous_button {
-  float: left;
+  z-index: 10;
+  margin: 0 auto;
+  display: inline-block;
 }
 
 span.gfield_required {
@@ -303,18 +306,22 @@ span.bevan_font {
 .secure {
   color: #fff;
   font-family: "alexandriaflfregular";
-  left: 0;
   overflow: hidden;
-  position: relative;
-  top: -92px;
+  margin: 38px auto 51px;
   z-index: 0;
+  max-width: 295px;
+  line-height: 1;
 }
 .secure .lock {
-  float: left;
-  margin-right: 5px;
+  overflow: hidden;
+  margin-right: 4px;
+  display: inline-block;
+  position: relative;
+  top: 1px;
 }
 .secure .disclaimer {
-  float: left;
+  display: inline-block;
+  overflow: hidden;
   line-height: 1;
   padding-top: 2px;
 }
@@ -325,13 +332,12 @@ span.bevan_font {
 }
 
 div.gfield_description.validation_message {
-  bottom: -18px;
   color: #003e55;
   font-family: "Karla",sans-serif;
   font-size: 14px;
   font-weight: bold;
-  left: 0;
-  position: absolute;
+  padding-left: 11px;
+  padding-top: 2px;
 }
 
 div.validation_error {
@@ -346,14 +352,14 @@ div.validation_error {
 
 .gf_progressbar_wrapper h3.gf_progressbar_title {
   clear: both !important;
-  font-size: 0.813em !important;
+  font-size: 1em !important;
   line-height: 1em !important;
-  margin: 0 0 0.375em !important;
+  margin: 0px 0 0.375em !important;
   font-family: "Karla",sans-serif;
   font-weight: 300;
   padding: 0 !important;
   position: relative !important;
-  top: 45px !important;
+  top: 51px !important;
 }
 
 .gf_progressbar {
@@ -362,7 +368,7 @@ div.validation_error {
   background-repeat: repeat-x !important;
   border-radius: 4px !important;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
-  height: 21px !important;
+  height: 26px !important;
   line-height: 20px !important;
   overflow: hidden !important;
   width: 100% !important;
@@ -376,8 +382,8 @@ div.validation_error {
 
 .gf_progressbar_percentage {
   font-family: helvetica,arial,sans-serif !important;
-  font-size: 13px !important;
-  height: 21px !important;
+  font-size: 16px !important;
+  height: 26px !important;
   text-align: right !important;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5) !important;
 }
@@ -388,6 +394,7 @@ div.validation_error {
   margin-left: 5px !important;
   margin-right: 5px !important;
   width: auto !important;
+  margin-top: 4px;
 }
 
 .gform_wrapper.fadeaway, .secure.fadeaway {
@@ -402,20 +409,15 @@ div.validation_error {
   visibility: visible;
 }
 
-/*
-.gform_page_2_2, .gform_page_2_3, .gform_page_2_4 {
-	opacity: 0;
-	visibility: hidden;
-	
+.gforms_confirmation_message {
+  text-align: center;
+  color: #fff;
+  font-family: "alexandriaflfregular";
+  height: 170px;
+  font-size: 25px;
+  padding-top: 60px;
 }
 
-
-.gform_page_2_2.fadein, .gform_page_2_3.fadein, .gform_page_2_4.fadein {
-	opacity: 1;
-	visibility: visible;
-	transition: all 0.5s ease;
-}
-*/
 @media screen and (min-width: 525px) {
   div.blue_bar br, div.testimonial_quote h2 br {
     display: none;
@@ -455,6 +457,90 @@ div.validation_error {
 
   .testimonial_quote.right {
     float: right;
+  }
+
+  .gform_page_footer {
+    width: 225px;
+    float: right;
+    margin-bottom: 13px;
+  }
+
+  .gform_next_button, #gform_submit_button_2 {
+    float: right;
+  }
+
+  .gform_previous_button {
+    float: left;
+  }
+
+  .gform_wrapper ul li input {
+    height: 31px;
+  }
+  .gform_wrapper ul li#field_2_10, .gform_wrapper ul li#field_2_18, .gform_wrapper ul li#field_2_8, .gform_wrapper ul li#field_2_9 {
+    width: 48%;
+    float: left;
+  }
+  .gform_wrapper ul li#field_2_10, .gform_wrapper ul li#field_2_18 {
+    margin-right: 24px;
+  }
+
+  .gform_next_button, .gform_previous_button, #gform_submit_button_2 {
+    font-size: 23px;
+    padding: 2px 15px;
+    line-height: 1;
+  }
+
+  .secure {
+    margin: 0;
+    left: 0;
+    position: relative;
+    top: -93px;
+  }
+  .secure .lock {
+    float: left;
+  }
+  .secure .disclaimer {
+    float: left;
+  }
+
+  .gf_progressbar_wrapper h3.gf_progressbar_title {
+    font-size: 0.813em !important;
+    top: 45px !important;
+  }
+
+  .gf_progressbar {
+    height: 21px !important;
+  }
+
+  .percentbar_green {
+    height: 21px !important;
+  }
+
+  .gf_progressbar_percentage span {
+    margin-top: 0;
+    font-size: 13px;
+    margin-top: 1px;
+  }
+
+  .gform_wrapper.fadeaway, .secure.fadeaway {
+    transition: all 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .gform_wrapper, .secure {
+    transition: all 0.5s ease;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .gforms_confirmation_message {
+    text-align: center;
+    color: #fff;
+    font-family: "alexandriaflfregular";
+    height: 170px;
+    font-size: 25px;
+    padding-top: 60px;
   }
 }
 @media screen and (max-width: 975px) {
