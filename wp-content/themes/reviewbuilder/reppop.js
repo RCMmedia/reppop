@@ -312,6 +312,10 @@ var r=!("doc"in o)
 return r||"win"in o||(o.win=a(this)),this.each(function(){var e=a(this).data("__nicescroll")||!1
 e||(o.doc=r?a(this):o.doc,e=new v(o,a(this)),a(this).data("__nicescroll",e)),t.push(e)}),1==t.length?t[0]:t},window.NiceScroll={getjQuery:function(){return e}},a.nicescroll||(a.nicescroll=new S,a.nicescroll.options=f)})
 jQuery(document).ready(function(){
+			
+			jQuery('body').delay(200).addClass('body_fadein');
+			
+			
 			jQuery(".back_to_top").click(function() {
 				jQuery("html, body").animate({ scrollTop: 0 }, 300);
 				return false;
