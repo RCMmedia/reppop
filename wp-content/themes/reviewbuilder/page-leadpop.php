@@ -19,10 +19,15 @@
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
 	<title><?php wp_title(''); ?></title>
 	<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory') ?>/leadpop-styles.css?v=4">
+	<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory') ?>/inc/leadpops/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Bevan|Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	<?php wp_head(); ?>
 	<script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/min/reppop-min.js"></script>
-	<script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/respond-master/src/respond.js"></script>
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="<?php bloginfo('template_url') ?>/inc/onepage/css/ie.css" media="screen" />
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
 	<script type="text/javascript">
 		jQuery(document).ready(function(){
 			
@@ -84,6 +89,37 @@
 				
 			});
 		});
+		//BEGIN Stars JS
+		jQuery(document).on("touchstart click", ".stars label", function () {
+  	  jQuery(".stars").fadeOut(function() {
+				jQuery('.form').fadeIn();
+		});
+			
+  	});
+	
+  	jQuery(document).on("touchstart click", ".stars label.star-1", function () {
+  	  jQuery(".cform-wrap").fadeIn();
+  	  jQuery("input.gform_hidden" ).val(jQuery("input.star-1").val());
+  	});
+  	jQuery(document).on("touchstart click", ".stars label.star-2", function () {
+  	  jQuery(".cform-wrap").fadeIn();
+  	  jQuery("input.gform_hidden" ).val(jQuery("input.star-2").val());
+  	});
+  	jQuery(document).on("touchstart click", ".stars label.star-3", function () {
+  	  jQuery(".cform-wrap").fadeIn();
+  	  jQuery("input.gform_hidden" ).val(jQuery("input.star-3").val());
+  	});
+  	
+  	jQuery(document).on("touchstart click", ".stars label.star-4", function () {
+  	  jQuery(".review-sites").fadeIn();
+  	  jQuery("input.gform_hidden" ).val(jQuery("input.star-4").val());
+  	});
+  	jQuery(document).on("touchstart click", ".stars label.star-5", function () {
+  	  jQuery(".review-sites").fadeIn();
+  	  jQuery("input.gform_hidden" ).val(jQuery("input.star-5").val());
+  	});
+  	//END Stars JS
+  	
 	</script>
 </head>
 <body id="<?php echo $page ?>" <?php body_class(); ?>>
@@ -96,6 +132,23 @@
 	</div><!-- header -->
 	<div class="main">
 		<div class="inner">
+			<div class="stars_wrap">
+				<div class="stars">
+					<ul>
+						<input type="radio"  tabindex="1" id="choice_4_0" value="1star" name="input_4" class="star-1 star">
+						<label id="label_4_0" for="choice_4_0" class="star-1"></label>
+						<input type="radio"  tabindex="2" id="choice_4_1" value="2star" name="input_4"  class="star-2 star">
+						<label id="label_4_1" for="choice_4_1" class="star-2"></label>
+						<input type="radio"  tabindex="3" id="choice_4_2" value="3star" name="input_4" class="star-3 star">
+						<label id="label_4_2" for="choice_4_2" class="star-3"></label>
+						<input type="radio"  tabindex="4" id="choice_4_3" value="4star" name="input_4" class="star-4 star">
+						<label id="label_4_3" for="choice_4_3" class="star-4"></label>
+						<input type="radio"  tabindex="5" id="choice_4_4" value="5star" name="input_4" class="star-5 star">
+						<label id="label_4_4" for="choice_4_4" class="star-5"></label>
+						<span></span>
+					</ul>
+				</div> <!-- .stars -->
+			</div><!-- .stars_wrap -->
 			<div class="form">
 				<?php echo do_shortcode('[gravityform id="2" title="false" description="false" ajax="true"]') ?>
 				<div class="secure">
@@ -104,9 +157,8 @@
 						Privacy & Security <span class="bevan_font">Guaranteed.</span><br/>
 						<span class="never_sold">Your Data is Never Sold or Shared. Ever.</span>
 				</div><!-- secure -->
-
-			
 			</div><!-- form -->
+			
 			<!--
 <a id="prev">prev</a>
 			<a id="next">next</a>
