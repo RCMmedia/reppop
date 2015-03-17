@@ -98,24 +98,24 @@
   	});
 	
   	jQuery(document).on("touchstart click", ".stars label.star-1", function () {
-  	  jQuery(".stars_wrap").fadeIn();
+  	  //jQuery(".stars_wrap").fadeIn();
   	  jQuery("input.gform_hidden" ).val(jQuery("input.star-1").val());
   	});
   	jQuery(document).on("touchstart click", ".stars label.star-2", function () {
-  	  jQuery(".stars_wrap").fadeIn();
+  	  //jQuery(".stars_wrap").fadeIn();
   	  jQuery("input.gform_hidden" ).val(jQuery("input.star-2").val());
   	});
   	jQuery(document).on("touchstart click", ".stars label.star-3", function () {
-  	  jQuery(".stars_wrap").fadeIn();
+  	  //jQuery(".stars_wrap").fadeIn();
   	  jQuery("input.gform_hidden" ).val(jQuery("input.star-3").val());
   	});
   	
   	jQuery(document).on("touchstart click", ".stars label.star-4", function () {
-  	  jQuery(".stars_wrap").fadeIn();
+  	  //jQuery(".stars_wrap").fadeIn();
   	  jQuery("input.gform_hidden" ).val(jQuery("input.star-4").val());
   	});
   	jQuery(document).on("touchstart click", ".stars label.star-5", function () {
-  	  jQuery(".stars_wrap").fadeIn();
+  	  //jQuery(".stars_wrap").fadeIn();
   	  jQuery("input.gform_hidden" ).val(jQuery("input.star-5").val());
   	});
   	//END Stars JS
