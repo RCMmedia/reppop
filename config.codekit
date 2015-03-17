@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "18027",
+"creatorBuild": "18493",
 "files": {
 	"\/index.php": {
 		"fileType": 8192,
@@ -9631,6 +9631,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/wp-content\/themes\/reviewbuilder\/images\/leadpop\/star-reg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3808,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/images\/leadpop\/star-reg.png",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/images\/leadpop\/star-reg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/themes\/reviewbuilder\/images\/leadpop\/star.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3692,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/images\/leadpop\/star.png",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/images\/leadpop\/star.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/themes\/reviewbuilder\/images\/leadpop\/supreme.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -9686,6 +9708,37 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/wp-content\/themes\/reviewbuilder\/images\/stars_leadpop.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5192,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/images\/stars_leadpop.png",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/images\/stars_leadpop.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/themes\/reviewbuilder\/inc\/iframe_module\/frame_manager.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/inc\/iframe_module\/frame_manager.js",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/inc\/iframe_module\/min\/frame_manager-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/wp-content\/themes\/reviewbuilder\/inc\/leadpops\/style.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/inc\/leadpops\/style.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/wp-content\/themes\/reviewbuilder\/index.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -9694,120 +9747,6 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/themes\/reviewbuilder\/jquery.nicescroll-master\/demo\/browser.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/jquery.nicescroll-master\/demo\/browser.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/themes\/reviewbuilder\/jquery.nicescroll-master\/demo\/iframe\/lgpl-3.0-standalone.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/jquery.nicescroll-master\/demo\/iframe\/lgpl-3.0-standalone.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/themes\/reviewbuilder\/jquery.nicescroll-master\/demo\/index.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/jquery.nicescroll-master\/demo\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/themes\/reviewbuilder\/jquery.nicescroll-master\/demo\/js\/jquery.min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/jquery.nicescroll-master\/demo\/js\/jquery.min.js",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/jquery.nicescroll-master\/demo\/js\/min\/jquery.min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/wp-content\/themes\/reviewbuilder\/jquery.nicescroll-master\/demo\/js\/jquery.nicescroll.min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/jquery.nicescroll-master\/demo\/js\/jquery.nicescroll.min.js",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/jquery.nicescroll-master\/demo\/js\/min\/jquery.nicescroll.min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/wp-content\/themes\/reviewbuilder\/jquery.nicescroll-master\/demo\/js\/zoomico.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 501,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/jquery.nicescroll-master\/demo\/js\/zoomico.png",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/jquery.nicescroll-master\/demo\/js\/zoomico.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/wp-content\/themes\/reviewbuilder\/jquery.nicescroll-master\/demo\/rtlmode\/index.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/jquery.nicescroll-master\/demo\/rtlmode\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/themes\/reviewbuilder\/jquery.nicescroll-master\/jquery.nicescroll.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/jquery.nicescroll-master\/jquery.nicescroll.js",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/jquery.nicescroll-master\/min\/jquery.nicescroll-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/wp-content\/themes\/reviewbuilder\/jquery.nicescroll-master\/jquery.nicescroll.min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/jquery.nicescroll-master\/jquery.nicescroll.min.js",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/jquery.nicescroll-master\/min\/jquery.nicescroll.min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/wp-content\/themes\/reviewbuilder\/jquery.nicescroll-master\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/jquery.nicescroll-master\/README.md",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/jquery.nicescroll-master\/README.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/themes\/reviewbuilder\/jquery.nicescroll-master\/zoomico.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 501,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/jquery.nicescroll-master\/zoomico.png",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/jquery.nicescroll-master\/zoomico.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
 		},
 	"\/wp-content\/themes\/reviewbuilder\/leadpop-styles.css": {
 		"fileType": 16,
@@ -9927,265 +9866,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 0
-		},
-	"\/wp-content\/themes\/reviewbuilder\/respond-master\/cross-domain\/example-base.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/cross-domain\/example-base.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/themes\/reviewbuilder\/respond-master\/cross-domain\/example.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/cross-domain\/example.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/themes\/reviewbuilder\/respond-master\/cross-domain\/respond-proxy.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/cross-domain\/respond-proxy.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/themes\/reviewbuilder\/respond-master\/cross-domain\/respond.proxy.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/cross-domain\/respond.proxy.js",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/cross-domain\/min\/respond.proxy-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/wp-content\/themes\/reviewbuilder\/respond-master\/dest\/respond.matchmedia.addListener.min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/dest\/respond.matchmedia.addListener.min.js",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/dest\/min\/respond.matchmedia.addListener.min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/wp-content\/themes\/reviewbuilder\/respond-master\/dest\/respond.matchmedia.addListener.src.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/dest\/respond.matchmedia.addListener.src.js",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/dest\/min\/respond.matchmedia.addListener.src-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/wp-content\/themes\/reviewbuilder\/respond-master\/dest\/respond.min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/dest\/respond.min.js",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/dest\/min\/respond.min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/wp-content\/themes\/reviewbuilder\/respond-master\/dest\/respond.src.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/dest\/respond.src.js",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/dest\/min\/respond.src-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/wp-content\/themes\/reviewbuilder\/respond-master\/Gruntfile.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/Gruntfile.js",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/min\/Gruntfile-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/wp-content\/themes\/reviewbuilder\/respond-master\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/README.md",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/README.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/themes\/reviewbuilder\/respond-master\/src\/matchmedia.addListener.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/src\/matchmedia.addListener.js",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/src\/min\/matchmedia.addListener-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/wp-content\/themes\/reviewbuilder\/respond-master\/src\/matchmedia.polyfill.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/src\/matchmedia.polyfill.js",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/src\/min\/matchmedia.polyfill-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/wp-content\/themes\/reviewbuilder\/respond-master\/src\/respond.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/src\/respond.js",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/src\/min\/respond-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/wp-content\/themes\/reviewbuilder\/respond-master\/test\/test.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/test\/test.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/themes\/reviewbuilder\/respond-master\/test\/test.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/test\/test.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/themes\/reviewbuilder\/respond-master\/test\/test2.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/test\/test2.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/themes\/reviewbuilder\/respond-master\/test\/unit\/index.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/test\/unit\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/themes\/reviewbuilder\/respond-master\/test\/unit\/qunit\/qunit.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/test\/unit\/qunit\/qunit.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/themes\/reviewbuilder\/respond-master\/test\/unit\/qunit\/qunit.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/test\/unit\/qunit\/qunit.js",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/test\/unit\/qunit\/min\/qunit-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/wp-content\/themes\/reviewbuilder\/respond-master\/test\/unit\/test-with-comment.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/test\/unit\/test-with-comment.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/themes\/reviewbuilder\/respond-master\/test\/unit\/test-with-dpr.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/test\/unit\/test-with-dpr.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/themes\/reviewbuilder\/respond-master\/test\/unit\/test-with-keyframe.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/test\/unit\/test-with-keyframe.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/themes\/reviewbuilder\/respond-master\/test\/unit\/test.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/test\/unit\/test.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/themes\/reviewbuilder\/respond-master\/test\/unit\/test2.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/test\/unit\/test2.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/themes\/reviewbuilder\/respond-master\/test\/unit\/test3.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/test\/unit\/test3.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/themes\/reviewbuilder\/respond-master\/test\/unit\/tests.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/test\/unit\/tests.js",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/respond-master\/test\/unit\/min\/tests-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
 		},
 	"\/wp-content\/themes\/reviewbuilder\/rtl.css": {
 		"fileType": 16,
@@ -15081,7 +14761,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Garrett Cullen",
+"lastSavedByUser": "Jason Monsef",
 "manualImportLinks": {
 	},
 "projectAttributes": {
@@ -15127,6 +14807,10 @@
 			},
 		"empty_constructor_needs_parens": {
 			"active": 0,
+			"flagValue": -1
+			},
+		"ensure_comprehensions": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"indentation": {
@@ -15220,6 +14904,10 @@
 		"space_operators": {
 			"active": 0,
 			"flagValue": -1
+			},
+		"spacing_after_comma": {
+			"active": 1,
+			"flagValue": -1
 			}
 		},
 	"coffeeMinifyOutput": 1,
@@ -15276,6 +14964,10 @@
 			"active": 1,
 			"flagValue": -1
 			},
+		"browserify": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"camelcase": {
 			"active": 0,
 			"flagValue": -1
@@ -15298,6 +14990,10 @@
 			},
 		"dojo": {
 			"active": 0,
+			"flagValue": -1
+			},
+		"elision": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"eqeqeq": {
@@ -15352,6 +15048,10 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"jasmine": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"jquery": {
 			"active": 1,
 			"flagValue": -1
@@ -15395,6 +15095,10 @@
 		"maxstatements": {
 			"active": 0,
 			"flagValue": 4
+			},
+		"mocha": {
+			"active": 0,
+			"flagValue": -1
 			},
 		"mootools": {
 			"active": 0,
@@ -15464,6 +15168,10 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"qunit": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"regexp": {
 			"active": 1,
 			"flagValue": -1
@@ -15481,6 +15189,10 @@
 			"flagValue": -1
 			},
 		"shelljs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"singleGroups": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -15684,6 +15396,7 @@
 	"slimAutoOutputPathStyle": 0,
 	"slimCompileOnly": 1,
 	"slimLogicless": 0,
+	"slimOutputFormat": 0,
 	"slimOutputStyle": 1,
 	"slimRailsCompatible": 0,
 	"stylusAutoOutputPathEnabled": 1,
@@ -15708,8 +15421,9 @@
 	"typescriptMinifyOutput": 0,
 	"typescriptModuleType": 0,
 	"typescriptNoImplicitAny": 0,
-	"typescriptNoResolve": 0,
+	"typescriptPreserveConstEnums": 0,
 	"typescriptRemoveComments": 0,
+	"typescriptSuppressImplicitAnyIndexErrors": 0,
 	"typescriptTargetECMAVersion": 0,
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
@@ -15746,6 +15460,10 @@
 			"flagValue": -1
 			},
 		"dead_code": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"drop_console": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -15789,6 +15507,10 @@
 			"active": 1,
 			"flagValue": -1
 			},
+		"keep_fargs": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"loops": {
 			"active": 1,
 			"flagValue": -1
@@ -15801,8 +15523,16 @@
 			"active": 1,
 			"flagValue": 32000
 			},
+		"negate_iife": {
+			"active": 1,
+			"flagValue": -1
+			},
 		"properties": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"pure_getters": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"quote-keys": {
