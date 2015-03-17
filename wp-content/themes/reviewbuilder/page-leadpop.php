@@ -91,7 +91,7 @@
 		});
 		//BEGIN Stars JS
 		jQuery(document).on("touchstart click", ".stars label", function () {
-  	  jQuery(".stars").fadeOut(function() {
+  	  jQuery(".stars_wrap").fadeOut(function() {
 				jQuery('.form').fadeIn();
 		});
 			
