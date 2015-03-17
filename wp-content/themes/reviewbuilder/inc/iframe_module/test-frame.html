@@ -1,32 +1,52 @@
-<!--Frame.html-Will reside in another domain-->
-<html xmlns="http://www.w3.org/1999/xhtml" >
-<head>
-    <title>Page In IFrame</title>
-    <script type="text/javascript" src="Frame.js"></script>
-    <script type="text/javascript">
-        window.onload = function(event)
-        {
-            window.setInterval(publishHeight, 300);
-        }
-    </script>
-</head>
-<body>
-    <div>
-        <div style="padding:4px;border:solid 1px #cccccc;width:300px">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce in tortor sit amet sem luctus ornare. Nam sed augue id erat commodo gravida. Nulla in pede. Nunc sed elit non pede aliquam eleifend. Cras varius. Sed non lorem eget ipsum accumsan suscipit. Donec bibendum enim. Phasellus a ligula. Fusce turpis diam, ultricies at, ullamcorper a, consectetuer et, mauris. Pellentesque neque felis, scelerisque non, vestibulum at, luctus quis, velit. Quisque sit amet mi sed sem facilisis ornare. In leo ante, hendrerit nec, lobortis eget, feugiat ac, orci.
-        </div>
-        <div style="padding:4px;border:solid 1px #cccccc;width:300px">
-            Maecenas ullamcorper ornare urna. Sed ornare leo vel lorem pretium ornare. Sed vitae lacus eu pede molestie venenatis. Morbi vestibulum. Proin tincidunt, sem sit amet semper volutpat, nulla ante pulvinar turpis, ut porta turpis augue sit amet magna. Nam in mauris. In mauris. Nunc metus. Duis eget diam. Sed vulputate lacus eget ipsum. Etiam ultricies bibendum ligula. Mauris semper, magna nec posuere pretium, quam lectus ultricies magna, ac pharetra risus ligula at dui. Integer volutpat sagittis ipsum.
-        </div>
-        <div style="padding:4px;border:solid 1px #cccccc;width:300px">
-            Cras pretium. Morbi condimentum. Morbi leo dui, hendrerit non, rhoncus vitae, ultrices sed, quam. Praesent sit amet quam non turpis pellentesque egestas. Aliquam odio lacus, condimentum eu, tempus eget, porta ac, ipsum. Phasellus sit amet mauris at nisl lobortis aliquet. Suspendisse fringilla metus porta lacus. Nam aliquet. Sed vestibulum tellus ac leo. Nunc sed metus vel nisl ultricies fermentum. Maecenas aliquam ligula quis est venenatis mattis. Suspendisse sollicitudin aliquet leo. Quisque condimentum felis ac nisl. Curabitur bibendum, pede et venenatis ornare, massa justo ullamcorper velit, a rutrum tellus mi et ligula. Maecenas nibh libero, faucibus vel, lacinia ac, laoreet nec, odio. Quisque dui quam, vestibulum sit amet, convallis eget, fermentum nec, mauris. Vivamus et massa ut orci pellentesque consectetuer. Proin dolor arcu, ornare non, iaculis eu, aliquam sed, quam. Morbi volutpat semper ipsum.
-        </div>
-        <div style="padding:4px;border:solid 1px #cccccc;width:300px">
-            Suspendisse potenti. Praesent eu turpis. Nullam nulla sem, sollicitudin lacinia, laoreet rhoncus, commodo nec, nisl. Nam pharetra porta justo. Etiam faucibus, turpis eu dapibus varius, felis nibh tempus justo, sed faucibus metus dolor nec leo. Sed rutrum, sapien eget placerat accumsan, enim quam porttitor leo, ac aliquam felis elit non enim. Sed dapibus nonummy massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean sagittis, metus et hendrerit aliquam, ligula turpis nonummy diam, id interdum risus ligula et magna. Phasellus vel nibh in lorem pretium iaculis.
-        </div>
-        <div style="padding:4px;border:solid 1px #cccccc;width:300px">
-            Proin mattis pharetra libero. Morbi varius, nunc laoreet blandit porttitor, pede augue condimentum felis, ac varius libero nibh eu est. Mauris condimentum arcu eget dolor. Phasellus vitae ipsum vel tellus feugiat lacinia. Quisque leo diam, porta id, commodo quis, ornare vitae, massa. In cursus dictum ante. In hac habitasse platea dictumst. Donec volutpat sem nec mauris. Donec venenatis lorem eget quam. Curabitur vitae ipsum sit amet augue dignissim ultricies. Maecenas eget velit. Donec nec tellus at lectus rhoncus ultricies.
-        </div>
-    </div>
-</body>
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<meta charset="utf-8"> 
+		<title>iFrame message passing test</title> 
+		<meta name="description" content="iFrame message passing test">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<style>
+			*, *:before, *:after {box-model: border-box;}
+			a { float:right; margin-left:10px;}
+		</style>
+	</head> 
+	<body> 
+
+		<b>iFrame</b> 
+		<a href='#' onclick="$('p:eq(0)').toggle();return false;">Toggle content</a>
+		&nbsp;
+		<a href='#' onclick="if ('parentIFrame' in window) window.parentIFrame.size(250);return false;">Size(250)</a>
+		&nbsp;
+		<a id="nested" href="frame.nested.html">Nested</a>
+		&nbsp;
+		<a href="frame.hover.html">:Hover</a>
+		&nbsp;
+		<a href="frame.absolute.html">Absolute Position</a>
+		&nbsp;
+		<a href='#' onclick="if ('parentIFrame' in window) window.parentIFrame.sendMessage('Hello from the iFrame');return false;">Send Message</a>
+		&nbsp;
+		<a href='#' onclick="if ('parentIFrame' in window) window.parentIFrame.close();return false;">Close</a>
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<p>
+			But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?
+		</p>
+		<p>
+			On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
+		</p>
+
+		<script>
+
+			var level = document.location.search.replace(/\?/,'') || 0;
+
+			$('#nested').attr('href','frame.nested.html?'+(++level));
+
+		</script>
+		
+
+		<script type="text/javascript" src="http://jasonmonsef.com/reppops/wp-content/themes/reviewbuilder/inc/iframe_module/js/frame.js"></script> 
+	</body>
 </html>

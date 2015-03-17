@@ -10,10 +10,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title><?php wp_title(''); ?></title>
 <link type="text/css" rel="stylesheet" href="<?php bloginfo('template_url') ?>/style-iframe-module.css">
+
 <style>
 	<?php the_field('style_override') ?>
 </style>
 <?php wp_head(); ?>
+<script type="text/javascript" src="<?php bloginfo('template_url') ?>/inc/iframe_module/js/frame.js"></script>
 
 </head>
 <?php
