@@ -33,3 +33,15 @@ ul.gfield_radio{margin:0!important;padding:0}
   padding: 10% 0;
 }
 .form {display: none;}
+
+.my_title.cta {
+  color: #fff;
+  font-size: 29px;
+  text-align: center;
+}
+.my_title.cta {
+  color: #fff;
+  font-family: "alexandriaflfregular";
+  font-size: 29px;
+  text-align: center;
+}

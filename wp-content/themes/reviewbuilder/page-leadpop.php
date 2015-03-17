@@ -98,24 +98,24 @@
   	});
 	
   	jQuery(document).on("touchstart click", ".stars label.star-1", function () {
-  	  jQuery(".cform-wrap").fadeIn();
+  	  jQuery(".stars_wrap").fadeIn();
   	  jQuery("input.gform_hidden" ).val(jQuery("input.star-1").val());
   	});
   	jQuery(document).on("touchstart click", ".stars label.star-2", function () {
-  	  jQuery(".cform-wrap").fadeIn();
+  	  jQuery(".stars_wrap").fadeIn();
   	  jQuery("input.gform_hidden" ).val(jQuery("input.star-2").val());
   	});
   	jQuery(document).on("touchstart click", ".stars label.star-3", function () {
-  	  jQuery(".cform-wrap").fadeIn();
+  	  jQuery(".stars_wrap").fadeIn();
   	  jQuery("input.gform_hidden" ).val(jQuery("input.star-3").val());
   	});
   	
   	jQuery(document).on("touchstart click", ".stars label.star-4", function () {
-  	  jQuery(".review-sites").fadeIn();
+  	  jQuery(".stars_wrap").fadeIn();
   	  jQuery("input.gform_hidden" ).val(jQuery("input.star-4").val());
   	});
   	jQuery(document).on("touchstart click", ".stars label.star-5", function () {
-  	  jQuery(".review-sites").fadeIn();
+  	  jQuery(".stars_wrap").fadeIn();
   	  jQuery("input.gform_hidden" ).val(jQuery("input.star-5").val());
   	});
   	//END Stars JS
@@ -133,7 +133,9 @@
 	<div class="main">
 		<div class="inner">
 			<div class="stars_wrap">
+				<div class="my_title cta"><span class="bevan_font">How are we doing?</span><br> Your Feedback <span class="bevan_font">Matters</span> to Us!</div>
 				<div class="stars">
+					
 					<ul>
 						<input type="radio"  tabindex="1" id="choice_4_0" value="1star" name="input_4" class="star-1 star">
 						<label id="label_4_0" for="choice_4_0" class="star-1"></label>
