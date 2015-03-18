@@ -9719,16 +9719,58 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/wp-content\/themes\/reviewbuilder\/inc\/iframe_module\/frame_manager.js": {
+	"\/wp-content\/themes\/reviewbuilder\/inc\/iframe_module\/js\/frame.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/inc\/iframe_module\/frame_manager.js",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/inc\/iframe_module\/min\/frame_manager-min.js",
+		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/inc\/iframe_module\/js\/frame.js",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/inc\/iframe_module\/js\/min\/frame-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/wp-content\/themes\/reviewbuilder\/inc\/iframe_module\/js\/frame_manager.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/inc\/iframe_module\/js\/frame_manager.js",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/inc\/iframe_module\/js\/min\/frame_manager-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/wp-content\/themes\/reviewbuilder\/inc\/iframe_module\/js\/min\/frame-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/inc\/iframe_module\/js\/min\/frame-min.js",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/inc\/iframe_module\/js\/min\/min\/frame-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/wp-content\/themes\/reviewbuilder\/inc\/iframe_module\/js\/min\/frame_manager-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/inc\/iframe_module\/js\/min\/frame_manager-min.js",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/inc\/iframe_module\/js\/min\/min\/frame_manager-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/wp-content\/themes\/reviewbuilder\/inc\/iframe_module\/test-frame.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/inc\/iframe_module\/test-frame.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/wp-content\/themes\/reviewbuilder\/inc\/leadpops\/style.css": {
 		"fileType": 16,
@@ -9834,15 +9876,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/page-iframe-module.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/themes\/reviewbuilder\/page-leadpop.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/reviewbuilder\/page-leadpop.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

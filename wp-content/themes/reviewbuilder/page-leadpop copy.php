@@ -19,49 +19,17 @@
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
 	<title><?php wp_title(''); ?></title>
 	<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory') ?>/leadpop-styles.css?v=4">
-		<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory') ?>/inc/leadpops/style.css">
+	<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory') ?>/inc/leadpops/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Bevan|Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	<?php wp_head(); ?>
 	<script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/min/reppop-min.js"></script>
-<!-- 	<script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/respond-master/src/respond.js"></script> -->
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="<?php bloginfo('template_url') ?>/inc/onepage/css/ie.css" media="screen" />
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
 	<script type="text/javascript">
 		jQuery(document).ready(function(){
-			
-			
-			jQuery(".stars label").click(function() {
-  		  jQuery(".stars_wrap").fadeOut(function() {
-					jQuery(".form_wrap").toggleClass("fadein");
-				});
-  		});
-			
-			
-/*
-	  	jQuery("label.star-1").click(function() {
-  		  //jQuery(".stars_wrap").fadeIn();
-  		  jQuery("input.gform_hidden" ).val(jQuery("input.star-1").val());
-  		});
-			
-	  	jQuery("label.star-2").click(function() {
-  		  //jQuery(".stars_wrap").fadeIn();
-  		  jQuery("input.gform_hidden" ).val(jQuery("input.star-2").val());
-  		});
-			
-	  	jQuery("label.star-3").click(function() {
-  		  //jQuery(".stars_wrap").fadeIn();
-  		  jQuery("input.gform_hidden" ).val(jQuery("input.star-3").val());
-  		});
-  		
-	  	jQuery("label.star-4").click(function() {
-  		  //jQuery(".stars_wrap").fadeIn();
-  		  jQuery("input.gform_hidden" ).val(jQuery("input.star-4").val());
-  		});
-			
-	  	jQuery("label.star-5").click(function() {
-  		  //jQuery(".stars_wrap").fadeIn();
-  		  jQuery("input.gform_hidden" ).val(jQuery("input.star-5").val());
-  		});
-*/
-  		//END Stars JS
 			
 			// Add css3 fadeins on click events 
 			// Next (Global)
@@ -85,11 +53,6 @@
 			
 			jQuery(document).bind('gform_page_loaded', function(event, form_id, current_page){
 			  
-				jQuery(".stars label").click(function() {
-  			  jQuery(".stars_wrap").fadeOut(function() {
-						jQuery(".form_wrap").toggleClass("fadein");
-					});
-  			});
 			  
 			  jQuery(document).scrollTop(0); // this changes the anchor point on multi page to the top of the page
 				
@@ -125,12 +88,38 @@
 						
 				
 			});
-				//BEGIN Stars JS
+		});		
 
+		//BEGIN Stars JS
+		jQuery(document).on("touchstart click", ".stars label", function () {
+  	  jQuery(".stars_wrap").fadeOut(function() {
+				jQuery('.form').fadeIn();
 		});
-		
-		
+			
+  	});
 	
+  	jQuery(document).on("touchstart click", ".stars label.star-1", function () {
+  	  //jQuery(".stars_wrap").fadeIn();
+  	  jQuery("input.gform_hidden" ).val(jQuery("input.star-1").val());
+  	});
+  	jQuery(document).on("touchstart click", ".stars label.star-2", function () {
+  	  //jQuery(".stars_wrap").fadeIn();
+  	  jQuery("input.gform_hidden" ).val(jQuery("input.star-2").val());
+  	});
+  	jQuery(document).on("touchstart click", ".stars label.star-3", function () {
+  	  //jQuery(".stars_wrap").fadeIn();
+  	  jQuery("input.gform_hidden" ).val(jQuery("input.star-3").val());
+  	});
+  	
+  	jQuery(document).on("touchstart click", ".stars label.star-4", function () {
+  	  //jQuery(".stars_wrap").fadeIn();
+  	  jQuery("input.gform_hidden" ).val(jQuery("input.star-4").val());
+  	});
+  	jQuery(document).on("touchstart click", ".stars label.star-5", function () {
+  	  //jQuery(".stars_wrap").fadeIn();
+  	  jQuery("input.gform_hidden" ).val(jQuery("input.star-5").val());
+  	});
+  	//END Stars JS
 
 	</script>
 </head>
@@ -142,34 +131,28 @@
 			<a href="http://leadpops.com" target="_blank" class="desktop_back">Back to Main Site<img src="<?php bloginfo('template_directory') ?>/images/leadpop/tri.png"/></a>
 		</div><!-- inner -->
 	</div><!-- header -->
-
-
 	<div class="main">
 		<div class="inner">
 			<div class="stars_wrap">
 				<div class="my_title cta"><span class="bevan_font">How are we doing?</span><br> Your Feedback <span class="bevan_font">Matters</span> to Us!</div>
 				<div class="stars">
 					
-
-						<input type="radio"  id="choice_1star" value="1star" class="star-1 star">
-						<label id="label_1star" class="star-1"></label>
-						
-						<input type="radio"  id="choice_2star" value="2star" class="star-2 star">
-						<label id="label_2star" class="star-2"></label>
-						
-						<input type="radio"  id="choice_3star" value="3star" class="star-3 star">
-						<label id="label_3star" class="star-3"></label>
-						
-						<input type="radio"  id="choice_4star" value="4star" class="star-4 star">
-						<label id="label_4star" class="star-4"></label>
-						
-						<input type="radio"  id="choice_5star" value="5star" class="star-5 star">
-						<label id="label_5star" class="star-5"></label>
+					<ul>
+						<input type="radio"  tabindex="1" id="choice_4_0" value="1star" name="input_4" class="star-1 star">
+						<label id="label_4_0" for="choice_4_0" class="star-1"></label>
+						<input type="radio"  tabindex="2" id="choice_4_1" value="2star" name="input_4"  class="star-2 star">
+						<label id="label_4_1" for="choice_4_1" class="star-2"></label>
+						<input type="radio"  tabindex="3" id="choice_4_2" value="3star" name="input_4" class="star-3 star">
+						<label id="label_4_2" for="choice_4_2" class="star-3"></label>
+						<input type="radio"  tabindex="4" id="choice_4_3" value="4star" name="input_4" class="star-4 star">
+						<label id="label_4_3" for="choice_4_3" class="star-4"></label>
+						<input type="radio"  tabindex="5" id="choice_4_4" value="5star" name="input_4" class="star-5 star">
+						<label id="label_4_4" for="choice_4_4" class="star-5"></label>
 						<span></span>
-
+					</ul>
 				</div> <!-- .stars -->
 			</div><!-- .stars_wrap -->
-			<div class="form_wrap"><div class="form">
+			<div class="form">
 				<?php echo do_shortcode('[gravityform id="2" title="false" description="false" ajax="true"]') ?>
 				<div class="secure">
 					<img class="lock" src="<?php bloginfo('template_directory') ?>/images/leadpop/lock.png"/>
@@ -177,9 +160,8 @@
 						Privacy & Security <span class="bevan_font">Guaranteed.</span><br/>
 						<span class="never_sold">Your Data is Never Sold or Shared. Ever.</span>
 				</div><!-- secure -->
-
+			</div><!-- form -->
 			
-			</div><!-- form --></div>
 			<!--
 <a id="prev">prev</a>
 			<a id="next">next</a>

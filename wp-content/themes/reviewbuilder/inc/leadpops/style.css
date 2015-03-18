@@ -32,7 +32,7 @@ ul.gfield_radio{margin:0!important;padding:0}
 .stars_wrap {
   padding: 10% 0;
 }
-.form {display: none;}
+.form_wrap {height: 0;overflow: hidden}
 
 .my_title.cta {
   color: #fff;
@@ -45,3 +45,4 @@ ul.gfield_radio{margin:0!important;padding:0}
   font-size: 29px;
   text-align: center;
 }
+.fadein {height: auto;overflow: visible;transition: all 0.3s ease 0s;}
