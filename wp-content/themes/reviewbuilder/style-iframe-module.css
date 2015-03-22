@@ -1,23 +1,9 @@
+*, *:before, *:after {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
 /* Reset */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-	background: transparent;
-	border: 0;
-	margin: 0;
-	padding: 0;
-	vertical-align: baseline;
-}
-body {
-	line-height: 1; overflow:hidden;background: url("") no-repeat;font-family: verdana,sans-serif;;
-}
-body.logged-in {overflow: auto;}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{background:transparent;border:0;margin:0;padding:0;vertical-align:baseline}
+body{line-height:1;overflow:hidden;background:url() no-repeat;font-family:sans-serif}
+body.logged-in{overflow:auto}
 h1,h2,h3,h4,h5,h6{clear:both;font-weight:400}
 blockquote{quotes:none}
 blockquote:before,blockquote:after{content:none}
@@ -26,102 +12,81 @@ table{border-collapse:collapse;border-spacing:0}
 a img{border:none}
 img{border:0}
 a{text-decoration:none;outline:none;cursor:pointer}
+::-webkit-input-placeholder{opacity:1}
+:-moz-placeholder{opacity:1}
+::-moz-placeholder{opacity:1}
+:-ms-input-placeholder{opacity:1}
+
+/* Gravity Forms Reset V2 COMPRESSED */
+.gform_wrapper li.gfield.gfield_error{background-color:transparent!important;border:medium none!important;padding:0!important}
+.gform_wrapper .top_label .gfield_description.validation_message,.gform_wrapper .gfield_description.validation_message{font-size:12px;margin-top:-11px!important;position:absolute!important;padding:10px 0!important}
+div#duplicateEmail{color:#C62626;font-size:10px;margin-left:0!important;margin-top:-7px!important;position:absolute!important;padding:10px 0!important}
+.gform_wrapper .validation_error{color:#790000;font-size:11px;font-weight:bold;line-height:1.5em;margin-bottom:0!important}
+#gforms_confirmation_message{background-color:transparent!important;border:medium none!important;margin:0!important;padding:0!important}
+div.validation_error{display:none}
+li{list-style:none;margin-bottom:15px}
+ul{margin:0;padding:0}
+li.gf_left_half{float:left!important}
+li.gf_right_half{float:right!important;clear:none!important}
+.gform_wrapper ul li.gfield{clear:both}
+select,input{width:100%}
+input,select,option,textarea{-webkit-box-sizing:border-box;-o-box-sizing:border-box;-khtml-box-sizing:border-box;-ms-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+div.ginput_complex span.ginput_full input{width:100%}
+input[type=checkbox]{float:left;width:15px;height:15px}
+
+/* Begin Star Rating CSS */
+ul.gfield_radio{margin:0!important;padding:0}
+.stars li{display:inline-block;float:left}
+.stars{background:url(images/stars3.png) repeat-x scroll 0 -4px rgba(0,0,0,0);margin:10px auto;width:260px}
+.stars input[type="radio"]{position:absolute;opacity:0;filter:alpha(opacity=0)}
+.stars input[type="radio"].star-5:checked ~ span{width:100%}
+.stars input[type="radio"].star-4:checked ~ span{width:80%}
+.stars input[type="radio"].star-3:checked ~ span{width:60%}
+.stars input[type="radio"].star-2:checked ~ span{width:40%}
+.stars input[type="radio"].star-1:checked ~ span{width:20%}
+.stars label{display:block;width:52px;height:52px;margin:0!important;padding:0!important;text-indent:-999em;float:left;position:relative;z-index:10;background:transparent!important;cursor:pointer}
+.stars label:hover ~ span{background-position:0 -52px}
+.stars label.star-5:hover ~ span{width:100%!important}
+.stars label.star-4:hover ~ span{width:80%!important}
+.stars label.star-3:hover ~ span{width:60%!important}
+.stars label.star-2:hover ~ span{width:40%!important}
+.stars label.star-1:hover ~ span{width:20%!important}
+.stars span{display:block;width:0;position:relative;top:0;left:0;height:49px;background:url(images/stars3.png) repeat-x 0 -52px;-webkit-transition:-webkit-width .5s;-moz-transition:-moz-width .5s;-ms-transition:-ms-width .5s;-o-transition:-o-width .5s;transition:width .5s}
+/* END Star Rating CSS */
 
 /* Main styles */
 #wrapper {
   background: none repeat scroll 0 0 transparent;
+  box-shadow: none;
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 400px;
+  padding: 10px;
 }
-.cform-wrap {
-	display: none;
-}
-.review-sites {display: none;}
-
-.social-icon {
-  background-size: contain !important;
-  display: block;
-  float: left;
-  height: 53px;
-  width: 33.3333%;
-}
+.cform-wrap{display:none}
+.review-sites{display:none}
+.social-icon{background-size:contain!important;display:block;float:left;height:53px;width:33.3333%}
 .social-icon.facebook {background: url("images/icon-facebook.png") no-repeat}
 .social-icon.google {background: url("images/icon-google.png") no-repeat}
 .social-icon.yelp {background: url("images/icon-yelp.png") no-repeat}
-/* Begin Star Rating CSS */
-ul.gfield_radio {
-  margin: 0 !important;
-  padding: 0;
+
+.cta {
+  font-size: 14px;
+  line-height: 1.2em;
+  margin: 0 0 20px;
+  text-align: center;
 }
-.stars li {display: inline-block;float: left;}	
-.stars {
-  background: url("images/stars3.png") repeat-x scroll 0 -4px rgba(0, 0, 0, 0);
-  margin: 10px auto;
-  width: 260px;
+
+/* Form Specific styles */
+.gfield_label {
+  display: none;
 }
-.stars input[type="radio"] {
-  position: absolute;
-  opacity: 0;
-  filter: alpha(opacity=0);
-}
-.stars input[type="radio"].star-5:checked ~ span {
+input, select, option, textarea {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 14px;
+  padding: 5px;
   width: 100%;
 }
-.stars input[type="radio"].star-4:checked ~ span {
-  width: 80%;
-}
-.stars input[type="radio"].star-3:checked ~ span {
-  width: 60%;
-}
-.stars input[type="radio"].star-2:checked ~ span {
-  width: 40%;
-}
-.stars input[type="radio"].star-1:checked ~ span {
-  width: 20%;
-}
-.stars label {
-  display: block;
-  width: 52px;
-  height: 52px;
-  margin: 0!important;
-  padding: 0!important;
-  text-indent: -999em;
-  float: left;
-  position: relative;
-  z-index: 10;
-  background: transparent!important;
-  cursor: pointer;
-}
-.stars label:hover ~ span {
-  background-position: 0 -52px;
-}
-.stars label.star-5:hover ~ span {
-  width: 100% !important;
-}
-.stars label.star-4:hover ~ span {
-  width: 80% !important;
-}
-.stars label.star-3:hover ~ span {
-  width: 60% !important;
-}
-.stars label.star-2:hover ~ span {
-  width: 40% !important;
-}
-.stars label.star-1:hover ~ span {
-  width: 20% !important;
-}
-.stars span {
-  display: block;
-  width: 0;
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 49px;
-  background: url("images/stars3.png") repeat-x 0 -52px;
-  -webkit-transition: -webkit-width 0.5s;
-  -moz-transition: -moz-width 0.5s;
-  -ms-transition: -ms-width 0.5s;
-  -o-transition: -o-width 0.5s;
-  transition: width 0.5s;
-}
-/* END Star Rating CSS */
+

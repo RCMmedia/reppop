@@ -1,0 +1,48 @@
+/* Begin Star Rating CSS */
+ul.gfield_radio{margin:0!important;padding:0}
+.stars li{display:inline-block;float:left}
+.stars{background:url(../../images/stars_leadpop.png) repeat-x scroll 0 -4px rgba(0,0,0,0);margin:10px auto;width:320px}
+.stars input[type="radio"]{position:absolute;opacity:0;filter:alpha(opacity=0)}
+.stars input[type="radio"].star-5:checked ~ span{width:100%}
+.stars input[type="radio"].star-4:checked ~ span{width:80%}
+.stars input[type="radio"].star-3:checked ~ span{width:60%}
+.stars input[type="radio"].star-2:checked ~ span{width:40%}
+.stars input[type="radio"].star-1:checked ~ span{width:20%}
+.stars label {
+  background: transparent none repeat scroll 0 0 !important;
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 64px;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: relative;
+  text-indent: -999em;
+  width: 64px;
+  z-index: 10;
+}.stars label:hover ~ span{background-position:0 -64px}
+.stars label.star-5:hover ~ span{width:100%!important}
+.stars label.star-4:hover ~ span{width:80%!important}
+.stars label.star-3:hover ~ span{width:60%!important}
+.stars label.star-2:hover ~ span{width:40%!important}
+.stars label.star-1:hover ~ span{width:20%!important}
+.stars span{display:block;width:0;position:relative;top:0;left:0;height:62px;background:url(../../images/stars_leadpop.png) repeat-x 0 -64px;-webkit-transition:-webkit-width .5s;-moz-transition:-moz-width .5s;-ms-transition:-ms-width .5s;-o-transition:-o-width .5s;transition:width .5s}
+/* END Star Rating CSS */
+
+.stars_wrap {
+  padding: 10% 0;
+}
+.form_wrap {height: 0;overflow: hidden}
+
+.my_title.cta {
+  color: #fff;
+  font-size: 29px;
+  text-align: center;
+}
+.my_title.cta {
+  color: #fff;
+  font-family: "alexandriaflfregular";
+  font-size: 29px;
+  text-align: center;
+}
+.fadein {height: auto;overflow: visible;transition: all 0.3s ease 0s;}

@@ -10,7 +10,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title><?php wp_title(''); ?></title>
 <link type="text/css" rel="stylesheet" href="<?php bloginfo('template_url') ?>/style-iframe-module.css">
+
+<style>
+	<?php the_field('style_override') ?>
+</style>
 <?php wp_head(); ?>
+<script type="text/javascript" src="<?php bloginfo('template_url') ?>/inc/iframe_module/js/frame.js"></script>
 
 </head>
 <?php
@@ -24,7 +29,7 @@
 <body id="<?php echo $page ?>" <?php body_class(); ?>>
 
 <div id="wrapper">
-
+	
 		<div class="stars">
 			<ul>
 				<input type="radio"  tabindex="1" id="choice_4_0" value="1star" name="input_4" class="star-1 star">
@@ -43,28 +48,30 @@
 	
 	<div class="cform-wrap">
 		<div class="cta">
-			<p>I'm sorry to hear that you did not have a pleasant dining experience at Blue Smoke Sushi Lounge. Our goal is to provide you with the finest customer service and leave you with a memorable experience. We would love to hear your feedback, and we will do everything that we can to resolve any issues. We value your comments and feedback.<br>
+			<p>I'm sorry to hear that you did not have a pleasant dining experience at Blue Smoke Sushi Lounge. Our goal is to provide you with the finest customer service and leave you with a memorable experience. We would love to hear your feedback, and we will do everything that we can to resolve any issues. We value your comments and feedback..<br>
 - Management</p>
 		</div>
 		<div class="cform">
 			<?php 
 			    $form = get_field('select_form');
 			    gravity_form_enqueue_scripts($form->id, true);
-			    gravity_form($form->id, true, true, false, '', true, 1); 
+			    gravity_form($form->id, false, true, false, '', true, 1); 
 			?>
 		</div>
 	</div><!-- .cform-wrap -->
 	<div class="review-sites">
-		<a href="" class="social-icon facebook"></a>
-		<a href="" class="social-icon google"></a>
-		<a href="" class="social-icon yelp"></a>
+		<a href="<?php the_field('facebook_link') ?>" class="social-icon facebook"></a>
+		<a href="<?php the_field('google_link') ?>" class="social-icon google"></a>
+		<a href="<?php the_field('yelp_link') ?>" class="social-icon yelp"></a>
 	</div>
 
 
 </div><!-- #wrapper -->
 <script>
 		jQuery(document).on("touchstart click", ".stars label", function () {
-  	  jQuery(".stars").fadeOut();
+  	  jQuery(".stars").fadeOut(function() {
+				jQuery('div.block').fadeIn();
+		});
 			
   	});
 	
