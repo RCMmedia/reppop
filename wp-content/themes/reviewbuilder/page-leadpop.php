@@ -20,7 +20,7 @@
 	<title><?php wp_title(''); ?></title>
 	<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory') ?>/leadpop-styles.css?v=4">
 		<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory') ?>/inc/leadpops/style.css">
-	<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Bevan|Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href="http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Bevan|Karla:400,400italic,700,700italic" rel="stylesheet" type="text/css">
 	<?php wp_head(); ?>
 	<script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/min/reppop-min.js"></script>
 <!-- 	<script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/respond-master/src/respond.js"></script> -->
@@ -28,39 +28,49 @@
 		jQuery(document).ready(function(){
 			
 			
-			jQuery(".stars label").click(function() {
+/*
+		jQuery(".stars label").click(function() {
   		  jQuery(".stars_wrap").fadeOut(function() {
 					jQuery(".form_wrap").toggleClass("fadein");
 				});
   		});
+*/
 			
 			
-/*
 	  	jQuery("label.star-1").click(function() {
-  		  //jQuery(".stars_wrap").fadeIn();
-  		  jQuery("input.gform_hidden" ).val(jQuery("input.star-1").val());
+  		  jQuery(".stars_wrap").fadeOut(function() {
+					jQuery(".form_wrap").toggleClass("fadein");
+				});
+  		  //jQuery("input.gform_hidden" ).val(jQuery("input.star-1").val());
   		});
 			
 	  	jQuery("label.star-2").click(function() {
-  		  //jQuery(".stars_wrap").fadeIn();
-  		  jQuery("input.gform_hidden" ).val(jQuery("input.star-2").val());
+  		  jQuery(".stars_wrap").fadeOut(function() {
+					jQuery(".form_wrap").toggleClass("fadein");
+				});
+  		  //jQuery("input.gform_hidden" ).val(jQuery("input.star-2").val());
   		});
 			
 	  	jQuery("label.star-3").click(function() {
-  		  //jQuery(".stars_wrap").fadeIn();
-  		  jQuery("input.gform_hidden" ).val(jQuery("input.star-3").val());
+  		  jQuery(".stars_wrap").fadeOut(function() {
+					jQuery(".form_wrap").toggleClass("fadein");
+				});
+  		  //jQuery("input.gform_hidden" ).val(jQuery("input.star-3").val());
   		});
   		
 	  	jQuery("label.star-4").click(function() {
-  		  //jQuery(".stars_wrap").fadeIn();
-  		  jQuery("input.gform_hidden" ).val(jQuery("input.star-4").val());
+  		  jQuery(".stars_wrap").fadeOut(function() {
+					jQuery(".review_links").toggleClass("fadein");
+				});
+  		  //jQuery("input.gform_hidden" ).val(jQuery("input.star-4").val());
   		});
 			
 	  	jQuery("label.star-5").click(function() {
-  		  //jQuery(".stars_wrap").fadeIn();
-  		  jQuery("input.gform_hidden" ).val(jQuery("input.star-5").val());
+  		  jQuery(".stars_wrap").fadeOut(function() {
+					jQuery(".review_links").toggleClass("fadein");
+				});
+  		  //jQuery("input.gform_hidden" ).val(jQuery("input.star-5").val());
   		});
-*/
   		//END Stars JS
 			
 			// Add css3 fadeins on click events 
@@ -169,17 +179,20 @@
 
 				</div> <!-- .stars -->
 			</div><!-- .stars_wrap -->
-			<div class="form_wrap"><div class="form">
-				<?php echo do_shortcode('[gravityform id="2" title="false" description="false" ajax="true"]') ?>
-				<div class="secure">
-					<img class="lock" src="<?php bloginfo('template_directory') ?>/images/leadpop/lock.png"/>
-					<div class="disclaimer">
-						Privacy & Security <span class="bevan_font">Guaranteed.</span><br/>
-						<span class="never_sold">Your Data is Never Sold or Shared. Ever.</span>
-				</div><!-- secure -->
-
 			
-			</div><!-- form --></div>
+			
+			
+			<div class="form_wrap">
+				<div class="form">
+				<?php echo do_shortcode('[gravityform id="2" title="false" description="false" ajax="true"]') ?>
+					<div class="secure">
+						<img class="lock" src="<?php bloginfo('template_directory') ?>/images/leadpop/lock.png"/>
+						<div class="disclaimer">
+							Privacy & Security <span class="bevan_font">Guaranteed.</span><br/>
+							<span class="never_sold">Your Data is Never Sold or Shared. Ever.</span>
+						</div><!-- secure -->
+					</div>
+				</div><!-- form -->
 			<!--
 <a id="prev">prev</a>
 			<a id="next">next</a>
@@ -194,6 +207,13 @@
 			</div>
 -->
 		</div><!-- inner -->
+		<div class="review_links">
+				<div class="review-sites">
+					<a href="<?php the_field('facebook_link') ?>" class="social-icon facebook"></a>
+					<a href="<?php the_field('google_link') ?>" class="social-icon google"></a>
+					<a href="<?php the_field('yelp_link') ?>" class="social-icon yelp"></a>
+				</div>
+			</div>
 	</div><!-- main -->
 	<div class="blue_bar">
 		<div class="inner">

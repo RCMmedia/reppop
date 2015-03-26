@@ -20,5 +20,5 @@ RewriteRule . /reppop/index.php [L]
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteRule wp-content/uploads/(.*) \
-    http://{PROD}/wp-content/uploads/$1 [NC,L]
+    http://rcm.media/reppops/wp-content/uploads/$1 [NC,L]
 </IfModule>
