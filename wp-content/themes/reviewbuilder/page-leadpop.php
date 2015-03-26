@@ -1,68 +1,66 @@
-	<?php
-	/**
-	 * Template Name: leadPop
-	 *
-	 * This is the template that displays all pages by default.
-	 * Please note that this is the WordPress construct of pages
-	 * and that other 'pages' on your WordPress site will use a
-	 * different template.
-	 *
-	 * @package WordPress
-	 * @subpackage Twenty_Ten
-	 * @since Twenty Ten 1.0
-	 */
-	?> 
-	<!DOCTYPE html>
-	<html>
-	<head>
-	<meta http-equiv="Content-Type" content="text/html;" charset="utf-8" />
-	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
-	<title><?php wp_title(''); ?></title>
-	<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory') ?>/leadpop-styles.css?v=4">
-		<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory') ?>/inc/leadpops/style.css">
-	<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Bevan|Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-	<?php wp_head(); ?>
-	<script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/min/reppop-min.js"></script>
-<!-- 	<script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/respond-master/src/respond.js"></script> -->
-	<script type="text/javascript">
-		jQuery(document).ready(function(){
-			
-			
-			jQuery(".stars label").click(function() {
+<?php
+/**
+ * Template Name: leadPop
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site will use a
+ * different template.
+ *
+ * @package WordPress
+ * @subpackage Twenty_Ten
+ * @since Twenty Ten 1.0
+ */
+?> 
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;" charset="utf-8" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<title><?php wp_title(''); ?></title>
+<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/leadpop-styles.css">
+<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/inc/leadpops/style.css">
+<link href="http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Bevan|Karla:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+<?php wp_head(); ?>
+<script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/min/reppop-min.js"></script>
+<script>
+		jQuery(document).ready(function() {	
+				
+	  	jQuery("label.star-1").click(function() {
   		  jQuery(".stars_wrap").fadeOut(function() {
-					jQuery(".form_wrap").toggleClass("fadein");
+					jQuery(".form_wrap").toggleClass('fadein');
 				});
   		});
 			
-			
-/*
-	  	jQuery("label.star-1").click(function() {
-  		  //jQuery(".stars_wrap").fadeIn();
-  		  jQuery("input.gform_hidden" ).val(jQuery("input.star-1").val());
-  		});
-			
 	  	jQuery("label.star-2").click(function() {
-  		  //jQuery(".stars_wrap").fadeIn();
-  		  jQuery("input.gform_hidden" ).val(jQuery("input.star-2").val());
-  		});
+  		  jQuery(".stars_wrap").fadeOut(function() {
+					jQuery(".form_wrap").toggleClass('fadein');
+				});
+ 		});
 			
 	  	jQuery("label.star-3").click(function() {
-  		  //jQuery(".stars_wrap").fadeIn();
-  		  jQuery("input.gform_hidden" ).val(jQuery("input.star-3").val());
+  		  jQuery(".stars_wrap").fadeOut(function() {
+					jQuery(".form_wrap").toggleClass('fadein');
+				});
   		});
   		
 	  	jQuery("label.star-4").click(function() {
-  		  //jQuery(".stars_wrap").fadeIn();
-  		  jQuery("input.gform_hidden" ).val(jQuery("input.star-4").val());
+  		  jQuery(".stars_wrap").fadeOut(function() {
+					jQuery('.review_links').toggleClass('fadein');
+				});
   		});
 			
 	  	jQuery("label.star-5").click(function() {
-  		  //jQuery(".stars_wrap").fadeIn();
-  		  jQuery("input.gform_hidden" ).val(jQuery("input.star-5").val());
+  		  jQuery(".stars_wrap").fadeOut(function() {
+					jQuery('.review_links').toggleClass('fadein');
+				});
   		});
-*/
-  		//END Stars JS
-			
+  	});
+
+       
+	</script>
+	<script type="text/javascript">
+
 			// Add css3 fadeins on click events 
 			// Next (Global)
 			jQuery(".gform_next_button").click(function() {
@@ -80,6 +78,8 @@
 				jQuery('.secure').addClass('fadeaway');
 			});
 			
+			});
+			
 			
 			// This is what binds to the document ready after validation happens on gform next button
 			
@@ -87,7 +87,7 @@
 			  
 				jQuery(".stars label").click(function() {
   			  jQuery(".stars_wrap").fadeOut(function() {
-						jQuery(".form_wrap").toggleClass("fadein");
+						jQuery(".form_wrap").toggleClass('fadein');
 					});
   			});
 			  
@@ -121,80 +121,70 @@
 				
 				jQuery('.gforms_confirmation_message_2').addClass('fadein_thankyou');
 				
-				
-						
-				
 			});
-				//BEGIN Stars JS
-
-		});
-		
-		
-	
-
+				
 	</script>
 </head>
-<body id="<?php echo $page ?>" <?php body_class(); ?>>
+<body>
 	
 	<div class="header">
 		<div class="inner">
-			<a href="http://leadpops.com" target="_blank"><img class="logo" src="<?php bloginfo('template_directory') ?>/images/leadpop/logo.png"/></a>
-			<a href="http://leadpops.com" target="_blank" class="desktop_back">Back to Main Site<img src="<?php bloginfo('template_directory') ?>/images/leadpop/tri.png"/></a>
-		</div><!-- inner -->
-	</div><!-- header -->
-
-
+			<a href="http://leadpops.com" target="_blank"><img class="logo" src="<?php bloginfo('template_directory'); ?>/images/leadpop/logo.png"/></a>
+			<a href="http://leadpops.com" target="_blank" class="desktop_back">Back to Main Site<img src="<?php bloginfo('template_directory'); ?>/images/leadpop/tri.png"/></a>
+		</div>
+	</div>
 	<div class="main">
 		<div class="inner">
 			<div class="stars_wrap">
-				<div class="my_title cta"><span class="bevan_font">How are we doing?</span><br> Your Feedback <span class="bevan_font">Matters</span> to Us!</div>
+				<div class="my_title cta">
+					<span class="bevan_font">How are we doing?</span>
+					<br> Your Feedback 
+					<span class="bevan_font">Matters</span> to Us!
+				</div><!-- .my_title -->
 				<div class="stars">
+					<input type="radio"  id="choice_1star" value="1star" class="star-1 star">
+					<label id="label_1star" class="star-1"></label>
 					
-
-						<input type="radio"  id="choice_1star" value="1star" class="star-1 star">
-						<label id="label_1star" class="star-1"></label>
-						
-						<input type="radio"  id="choice_2star" value="2star" class="star-2 star">
-						<label id="label_2star" class="star-2"></label>
-						
-						<input type="radio"  id="choice_3star" value="3star" class="star-3 star">
-						<label id="label_3star" class="star-3"></label>
-						
-						<input type="radio"  id="choice_4star" value="4star" class="star-4 star">
-						<label id="label_4star" class="star-4"></label>
-						
-						<input type="radio"  id="choice_5star" value="5star" class="star-5 star">
-						<label id="label_5star" class="star-5"></label>
-						<span></span>
-
+					<input type="radio"  id="choice_2star" value="2star" class="star-2 star">
+					<label id="label_2star" class="star-2"></label>
+					
+					<input type="radio"  id="choice_3star" value="3star" class="star-3 star">
+					<label id="label_3star" class="star-3"></label>
+					
+					<input type="radio"  id="choice_4star" value="4star" class="star-4 star">
+					<label id="label_4star" class="star-4"></label>
+					
+					<input type="radio"  id="choice_5star" value="5star" class="star-5 star">
+					<label id="label_5star" class="star-5"></label>
+					<span></span>
 				</div> <!-- .stars -->
 			</div><!-- .stars_wrap -->
-			<div class="form_wrap"><div class="form">
-				<?php echo do_shortcode('[gravityform id="2" title="false" description="false" ajax="true"]') ?>
-				<div class="secure">
-					<img class="lock" src="<?php bloginfo('template_directory') ?>/images/leadpop/lock.png"/>
-					<div class="disclaimer">
-						Privacy & Security <span class="bevan_font">Guaranteed.</span><br/>
-						<span class="never_sold">Your Data is Never Sold or Shared. Ever.</span>
-				</div><!-- secure -->
-
 			
-			</div><!-- form --></div>
-			<!--
-<a id="prev">prev</a>
-			<a id="next">next</a>
-
-			<div id="my_progressbar" class="progressbar_wrapper">
-				<h3 class="gf_progressbar_title">Step 1 of 4 </h3>
-				<div class="gf_progressbar">
-					<div class="gf_progressbar_percentage percentbar_green percentbar_25" style="width:25%;">
-						<span>25%</span>
-					</div>
-				</div>
-			</div>
--->
+			<div class="form_wrap">
+				<div class="form">
+				<?php echo do_shortcode('[gravityform id="2" title="false" description="false" ajax="true"]') ?>
+					<div class="secure">
+						<img class="lock" src="<?php bloginfo('template_directory') ?>/images/leadpop/lock.png"/>
+						<div class="disclaimer">
+							Privacy & Security <span class="bevan_font">Guaranteed.</span><br/>
+							<span class="never_sold">Your Data is Never Sold or Shared. Ever.</span>
+						</div><!-- disclaimer -->
+					</div><!-- secure -->
+				</div><!-- form -->
+<!-- 			</div> -->
+			
 		</div><!-- inner -->
+		<div class="review_links">
+			<div class="review-sites">
+				<a href="<?php the_field('facebook_link') ?>" class="social-icon facebook"></a>
+				<a href="<?php the_field('google_link') ?>" class="social-icon google"></a>
+				<a href="<?php the_field('yelp_link') ?>" class="social-icon yelp"></a>
+			</div><!-- .review-sites -->
+		</div><!-- .review_links -->
 	</div><!-- main -->
+		
+	
+
 	<div class="blue_bar">
 		<div class="inner">
 			<a href="http://leadpops.com">
@@ -379,6 +369,7 @@
 			</div><!-- testimonial quote -->
 		</div><!-- inner -->
 	</div><!-- overlay -->	
+	
 	<?php wp_footer(); ?>
 	</body>
 	</html>

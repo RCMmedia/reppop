@@ -45,4 +45,28 @@ ul.gfield_radio{margin:0!important;padding:0}
   font-size: 29px;
   text-align: center;
 }
-.fadein {height: auto;overflow: visible;transition: all 0.3s ease 0s;}
+.fadein {height: auto;overflow: visible ;transition: all 0.3s ease 0s;}
+.review_links {height: 0;overflow: hidden}
+.review_links.fadein {
+  height: auto;
+  margin: 10% auto;
+  max-width: 350px;
+}
+.social-icon{background-size:contain!important;display:block;float:left;height:53px;width:33.3333%}
+.social-icon.facebook {background: url("../../images/icon-facebook.png") no-repeat}
+.social-icon.google {background: url("../../images/icon-google.png") no-repeat}
+.social-icon.yelp {background: url("../../images/icon-yelp.png") no-repeat}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
