@@ -175,7 +175,12 @@
 			
 		</div><!-- inner -->
 		<div class="review_links">
+			<div class="my_title cta">
+					<span class="bevan_font">Click on a link below</span>
+					To Get Started!
+				</div><!-- .my_title -->
 			<div class="review-sites">
+				
 				<a href="<?php the_field('facebook_link') ?>" class="social-icon facebook"></a>
 				<a href="<?php the_field('google_link') ?>" class="social-icon google"></a>
 				<a href="<?php the_field('yelp_link') ?>" class="social-icon yelp"></a>
