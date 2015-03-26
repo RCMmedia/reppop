@@ -24,88 +24,43 @@
 <?php wp_head(); ?>
 <script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/min/reppop-min.js"></script>
 <script>
-		
-			jQuery(document).bind('gform_post_render', function(){		
+		jQuery(document).ready(function() {	
+				
 	  	jQuery("label.star-1").click(function() {
   		  jQuery(".stars_wrap").fadeOut(function() {
 					jQuery(".form_wrap").toggleClass('fadein');
 				});
-  		  //jQuery("input.gform_hidden" ).val(jQuery("input.star-1").val());
   		});
 			
 	  	jQuery("label.star-2").click(function() {
-  		  jQuery('.stars_wrap').fadeOut(function() {
-					jQuery('.form_wrap').toggleClass('fadein');
+  		  jQuery(".stars_wrap").fadeOut(function() {
+					jQuery(".form_wrap").toggleClass('fadein');
 				});
-  		  //jQuery("input.gform_hidden" ).val(jQuery("input.star-2").val());
-  		});
+ 		});
 			
 	  	jQuery("label.star-3").click(function() {
-  		  jQuery('.stars_wrap').fadeOut(function() {
-					jQuery('.form_wrap').toggleClass('fadein');
+  		  jQuery(".stars_wrap").fadeOut(function() {
+					jQuery(".form_wrap").toggleClass('fadein');
 				});
-  		  //jQuery("input.gform_hidden" ).val(jQuery("input.star-3").val());
   		});
   		
 	  	jQuery("label.star-4").click(function() {
-  		  jQuery('.stars_wrap').fadeOut(function() {
+  		  jQuery(".stars_wrap").fadeOut(function() {
 					jQuery('.review_links').toggleClass('fadein');
 				});
-  		  //jQuery("input.gform_hidden" ).val(jQuery("input.star-4").val());
   		});
 			
 	  	jQuery("label.star-5").click(function() {
-  		  jQuery('.stars_wrap').fadeOut(function() {
+  		  jQuery(".stars_wrap").fadeOut(function() {
 					jQuery('.review_links').toggleClass('fadein');
 				});
-  		  //jQuery("input.gform_hidden" ).val(jQuery("input.star-5").val());
   		});
-  		});
-  		//END Stars JS
+  	});
 
-		jQuery(document).bind('gform_post_render', function(){
-       jQuery(document).ready(function() {			
- 
-        jQuery("#label_1star").click(function() {
-  			  jQuery('input.gform_hidden').val('1star');
-  			});
-  			
-				
-	  		jQuery("#label_2star").click(function() {
-  			  jQuery('input.gform_hidden').val('2star');
-  			});
-				
-	  		jQuery("#label_3star").click(function() {
-  			  jQuery('input.gform_hidden').val('3star');
-  			});
-
-				
-				});
-
-
-    });
-
+       
 	</script>
 	<script type="text/javascript">
-		jQuery(document).bind('gform_post_render', function(){
-			
-			jQuery(document).ready(function() {			
- 
-        jQuery("#label_1star").click(function() {
-  			  jQuery('input.gform_hidden').val('1star');
-  			});
-  			
-				
-	  		jQuery("#label_2star").click(function() {
-  			  jQuery('input.gform_hidden').val('2star');
-  			});
-				
-	  		jQuery("#label_3star").click(function() {
-  			  jQuery('input.gform_hidden').val('3star');
-  			});
 
-				
-				});
 			// Add css3 fadeins on click events 
 			// Next (Global)
 			jQuery(".gform_next_button").click(function() {
@@ -216,7 +171,7 @@
 						</div><!-- disclaimer -->
 					</div><!-- secure -->
 				</div><!-- form -->
-			
+<!-- 			</div> -->
 			
 		</div><!-- inner -->
 		<div class="review_links">
