@@ -1,5 +1,7 @@
 <?php
 
+defined( 'ABSPATH' ) or die();
+
 /*
 Dropin Name: Filter GUI
 Dropin URI: http://simple-history.com/
@@ -26,9 +28,9 @@ class SimpleHistoryFilterDropin {
 
 		$file_url = plugin_dir_url(__FILE__);
 
-		wp_enqueue_script("simple_history_FilterDropin", $file_url . "SimpleHistoryFilterDropin.js", array("jquery"), SimpleHistory::VERSION, true);
+		wp_enqueue_script("simple_history_FilterDropin", $file_url . "SimpleHistoryFilterDropin.js", array("jquery"), SIMPLE_HISTORY_VERSION, true);
 
-		wp_enqueue_style("simple_history_FilterDropin", $file_url . "SimpleHistoryFilterDropin.css", null, SimpleHistory::VERSION);
+		wp_enqueue_style("simple_history_FilterDropin", $file_url . "SimpleHistoryFilterDropin.css", null, SIMPLE_HISTORY_VERSION);
 
 	}
 
@@ -51,7 +53,7 @@ class SimpleHistoryFilterDropin {
 				</p>
 
 				<div class="SimpleHistory__filters__moreFilters js-SimpleHistory__filters__moreFilters">
-					
+
 					<p>
 						<select name="loglevels" class="SimpleHistory__filters__filter SimpleHistory__filters__filter--loglevel" style="width: 300px" placeholder="<?php _e("All log levels", "simple-history") ?>" multiple>
 							<option value="debug" data-color="#CEF6D8"><?php echo $this->sh->getLogLevelTranslated("Debug") ?></option>
@@ -204,7 +206,7 @@ class SimpleHistoryFilterDropin {
 		if ( method_exists($wpdb, "esc_like") ) {
 			$str_like = $wpdb->esc_like( $q );
 		} else {
-			$str_like = like_escape( esc_sql( $q ) );
+			$str_like = like_escape( $q );
 		}
 
 		$sql_users = $wpdb->prepare(
