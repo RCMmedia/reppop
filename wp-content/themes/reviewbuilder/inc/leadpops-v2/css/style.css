@@ -1,0 +1,557 @@
+/* @import url("images/leadpop/fonts/webfontkit-20150303-001335/stylesheet.css"); */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  outline: none;
+}
+
+a img {
+  border: none;
+}
+
+body {
+  background: #000;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+body.body_fadein {
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.header, .main, .blue_bar, .testimonials, .inner, .overlay {
+  width: 100%;
+}
+
+.inner {
+  height: 100%;
+  margin: 0 auto;
+  width: 93%;
+  overflow: hidden;
+  max-width: 907px;
+}
+
+.header {
+  height: 63px;
+  background: url(images/leadpop/header_bg.png) top left repeat-x;
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+}
+
+.logo {
+  display: block;
+  margin: 4px auto 0;
+  width: 130px;
+}
+
+.desktop_back {
+  display: none;
+}
+
+.desktop_back.close {
+  display: block;
+  float: right;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 19px;
+  cursor: pointer;
+}
+.desktop_back.close img {
+  margin-left: 4px;
+  position: relative;
+  top: 1px;
+}
+
+.desktop_back.close:hover {
+  text-decoration: underline;
+}
+
+.main {
+  background: url(images/leadpop/bg.jpg) top center repeat-x;
+  background-size: cover;
+}
+
+.blue_bar {
+  padding: 12px 0;
+  background: #01aef0;
+  border-top: #28bcff 2px solid;
+  line-height: 1.1;
+  text-align: center;
+}
+.blue_bar img {
+  margin-left: 4px;
+}
+.blue_bar a {
+  color: #003e55;
+  text-decoration: none;
+}
+.blue_bar a span.alexandria_font {
+  font-family: 'alexandriaflfregular';
+  font-size: 23px;
+}
+
+.testimonials {
+  background: #000;
+  font-family: 'Karla', sans-serif;
+  overflow: hidden;
+  padding-top: 20px;
+}
+
+.testimonial_quote {
+  cursor: pointer;
+  text-align: center;
+  max-width: 435px;
+  display: block;
+  margin: 0 auto 35px;
+}
+.testimonial_quote h2 {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 15px;
+  line-height: 1;
+  color: #fff;
+}
+.testimonial_quote p {
+  font-style: italic;
+  margin-bottom: 15px;
+  color: #6f6f6f;
+}
+
+img.quote {
+  position: relative;
+  top: 4px;
+}
+
+img.left {
+  margin-right: 5px;
+}
+
+.read_more {
+  color: #01aef0;
+}
+
+.read_more:hover {
+  text-decoration: underline;
+}
+
+.back_to_top {
+  clear: both;
+  margin: 0 auto 35px;
+  text-align: center;
+  width: 240px;
+  cursor: pointer;
+}
+.back_to_top img {
+  display: block;
+  margin: 0 auto 4px;
+}
+.back_to_top a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+}
+.back_to_top span {
+  color: #fff;
+  display: block;
+  font-family: 'Karla', sans-serif;
+  font-size: 12px;
+}
+
+.overlay {
+  height: 100%;
+  background: black;
+  background: rgba(0, 0, 0, 0.98);
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  font-family: 'Karla', sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+.overlay .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+}
+.overlay .overlay_inner {
+  margin: 100px auto 0;
+  width: 90%;
+  max-width: 907px;
+}
+.overlay .overlay_inner .testimonial_quote {
+  max-width: 569px;
+  cursor: default;
+}
+
+.overlay .logo {
+  margin: 4px 0 0 !important;
+  float: left;
+}
+
+span.client_name {
+  display: block;
+  margin-bottom: 17px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.overlay.open {
+  opacity: 1;
+  visibility: visible;
+  z-index: 20;
+  transition: all 0.5s ease;
+}
+
+/* gform */
+.form {
+  max-width: 612px;
+  margin: 38px auto 27px;
+}
+
+.gform_wrapper {
+  color: #fff;
+}
+.gform_wrapper ul {
+  list-style: none;
+}
+.gform_wrapper ul li {
+  margin-bottom: 30px;
+  position: relative;
+}
+.gform_wrapper ul li input, .gform_wrapper ul li textarea {
+  background: #e4f4fd;
+  border: none;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  font-family: 'Quicksand', sans-serif;
+  padding: 0px 0 0 10px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  font-size: 17px;
+}
+.gform_wrapper ul li textarea {
+  width: 100% !important;
+  min-height: 150px !important;
+  padding: 7px 0 0 10px;
+}
+.gform_wrapper ul li input {
+  height: 35px;
+  width: 100%;
+}
+.gform_wrapper ul li#field_2_10, .gform_wrapper ul li#field_2_18, .gform_wrapper ul li#field_2_8, .gform_wrapper ul li#field_2_9 {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.gform_page_footer {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.gform_next_button, .gform_previous_button, #gform_submit_button_2 {
+  background: #ff9000;
+  border: 2.5px solid #fff;
+  font-size: 28px;
+  font-family: 'alexandriaflfregular';
+  color: #fff;
+  padding: 4px 22px;
+  line-height: 1;
+  -webkit-border-radius: 19px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-appearance: none;
+  cursor: pointer;
+  margin-left: 10px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+span.gfield_required {
+  display: none;
+}
+
+.gsection {
+  text-align: center;
+}
+.gsection .gsection_description {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 21px;
+  line-height: 1;
+}
+.gsection .gsection_description .my_title {
+  line-height: 1.1;
+  font-size: 26px;
+  font-family: 'alexandriaflfregular';
+}
+
+span.bevan_font {
+  font-family: 'Bevan', cursive;
+}
+
+.secure {
+  color: #fff;
+  font-family: "alexandriaflfregular";
+  overflow: hidden;
+  margin: 38px auto 51px;
+  z-index: 0;
+  max-width: 295px;
+  line-height: 1;
+}
+.secure .lock {
+  overflow: hidden;
+  margin-right: 4px;
+  display: inline-block;
+  position: relative;
+  top: 1px;
+}
+.secure .disclaimer {
+  display: inline-block;
+  overflow: hidden;
+  line-height: 1;
+  padding-top: 2px;
+}
+.secure .disclaimer span.never_sold {
+  font-family: 'Karla', sans-serif;
+  font-size: 13.4px;
+  font-weight: 300;
+}
+
+div.gfield_description.validation_message {
+  color: #003e55;
+  font-family: "Karla",sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 11px;
+  padding-top: 2px;
+}
+
+div.validation_error {
+  display: none;
+}
+
+.gf_progressbar_wrapper {
+  clear: both !important;
+  margin: 0 0 0.5em !important;
+  width: 100% !important;
+}
+
+.gf_progressbar_wrapper h3.gf_progressbar_title {
+  clear: both !important;
+  font-size: 1em !important;
+  line-height: 1em !important;
+  margin: 0px 0 0.375em !important;
+  font-family: "Karla",sans-serif;
+  font-weight: 300;
+  padding: 0 !important;
+  position: relative !important;
+  top: 51px !important;
+}
+
+.gf_progressbar {
+  background-color: #e4f4fd !important;
+  background-position: center bottom !important;
+  background-repeat: repeat-x !important;
+  border-radius: 4px !important;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  height: 26px !important;
+  line-height: 20px !important;
+  overflow: hidden !important;
+  width: 100% !important;
+}
+
+.percentbar_green {
+  background-color: #94dc21 !important;
+  background-repeat: repeat-x !important;
+  color: #fff !important;
+}
+
+.gf_progressbar_percentage {
+  font-family: helvetica,arial,sans-serif !important;
+  font-size: 16px !important;
+  height: 26px !important;
+  text-align: right !important;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5) !important;
+}
+
+.gf_progressbar_percentage span {
+  display: block !important;
+  float: right !important;
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+  width: auto !important;
+  margin-top: 4px;
+}
+
+.gform_wrapper.fadeaway, .secure.fadeaway {
+  transition: all 0.5s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.gform_wrapper, .secure {
+  transition: all 0.5s ease;
+  opacity: 1;
+  visibility: visible;
+}
+
+.gforms_confirmation_message {
+  text-align: center;
+  color: #fff;
+  font-family: "alexandriaflfregular";
+  height: 170px;
+  font-size: 25px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 525px) {
+  div.blue_bar br, div.testimonial_quote h2 br {
+    display: none;
+  }
+}
+@media screen and (min-width: 665px) {
+  .logo {
+    float: left;
+  }
+
+  .desktop_back {
+    display: block;
+    float: right;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 19px;
+    cursor: pointer;
+  }
+  .desktop_back img {
+    margin-left: 4px;
+    position: relative;
+    top: 1px;
+  }
+
+  span.desktop_back:hover {
+    text-decoration: underline;
+  }
+
+  .testimonials .testimonial_quote {
+    width: 45%;
+    margin: 0px auto 35px;
+  }
+
+  .testimonial_quote.left {
+    float: left;
+  }
+
+  .testimonial_quote.right {
+    float: right;
+  }
+
+  .gform_page_footer {
+    width: 225px;
+    float: right;
+    margin-bottom: 13px;
+  }
+
+  .gform_next_button, #gform_submit_button_2 {
+    float: right;
+  }
+
+  .gform_previous_button {
+    float: left;
+  }
+
+  .gform_wrapper ul li input {
+    height: 31px;
+  }
+  .gform_wrapper ul li#field_2_10, .gform_wrapper ul li#field_2_18, .gform_wrapper ul li#field_2_8, .gform_wrapper ul li#field_2_9 {
+    width: 48%;
+    float: left;
+  }
+  .gform_wrapper ul li#field_2_10, .gform_wrapper ul li#field_2_18 {
+    margin-right: 24px;
+  }
+
+  .gform_next_button, .gform_previous_button, #gform_submit_button_2 {
+    font-size: 23px;
+    padding: 2px 15px;
+    line-height: 1;
+  }
+
+  .secure {
+    margin: 0;
+    left: 0;
+    position: relative;
+    top: -93px;
+  }
+  .secure .lock {
+    float: left;
+  }
+  .secure .disclaimer {
+    float: left;
+  }
+
+  .gf_progressbar_wrapper h3.gf_progressbar_title {
+    font-size: 0.813em !important;
+    top: 45px !important;
+  }
+
+  .gf_progressbar {
+    height: 21px !important;
+  }
+
+  .percentbar_green {
+    height: 21px !important;
+  }
+
+  .gf_progressbar_percentage span {
+    margin-top: 0;
+    font-size: 13px;
+    margin-top: 1px;
+  }
+
+  .gform_wrapper.fadeaway, .secure.fadeaway {
+    transition: all 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .gform_wrapper, .secure {
+    transition: all 0.5s ease;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .gforms_confirmation_message {
+    text-align: center;
+    color: #fff;
+    font-family: "alexandriaflfregular";
+    height: 170px;
+    font-size: 25px;
+    padding-top: 60px;
+  }
+}
+@media screen and (max-width: 975px) {
+  div.blue_bar br, div.testimonial_quote h2 br {
+    display: block;
+  }
+}
