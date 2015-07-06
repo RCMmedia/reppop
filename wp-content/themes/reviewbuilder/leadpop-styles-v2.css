@@ -502,7 +502,19 @@ span.blue {color: #2790f9}
 	background: #2790f9;
 }
 
-
+.review_links.fadein {
+  height: auto;
+  margin: 10% auto 0 !important; 
+  max-width: 350px;
+  padding-bottom: 10%;
+}
+.review_links.fadein > p {
+  color: #fff;
+  font-family: "lato";
+  font-size: 17px;
+  margin-bottom: 20px;
+  text-align: center;
+}
 
 
 @media screen and (max-width: 525px) {
