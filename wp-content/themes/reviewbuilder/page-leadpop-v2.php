@@ -225,7 +225,7 @@
 			<a class="button cta" href="http://leadpops.com">
 				<img src="<?php bloginfo('template_url') ?>/inc/leadpops-v2/images/megaphone-icon.png"/> Start Generating Exclusive Leads Now!
 			</a>
-			<a class="button cta_button" href="">Start My FREE 30-Day Trial</a>
+			<a class="button cta_button" href="https://free-trial.leadpops.com/" target="_blank">Start My FREE 30-Day Trial</a>
 		</div><!-- inner -->
 	</div><!-- blue bar -->
 	<div class="testimonials clearfix">
@@ -392,6 +392,7 @@ RESULT: leadPops have proven to be an excellent professional contact with a prod
 			prev : ".prev",
 			paused : true
 		});
+		
 		jQuery('.slide-pager').click(function() {
 			jQuery('html, body').animate({
         scrollTop: jQuery(".testimonials").offset().top
