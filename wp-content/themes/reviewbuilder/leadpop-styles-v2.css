@@ -43,10 +43,15 @@ body.body_fadein {
 .header {
   height: 63px;
 /*   background: url(images/leadpop/header_bg.png) top left repeat-x; */
-  font-family: 'Karla', sans-serif;
+  font-family:"Lato",sans-serif;
   font-size: 18px;
 }
-
+.my_title.cta {
+  color: #fff;
+  font-family:"Lato",sans-serif !important;
+  font-size: 29px;
+  text-align: center;
+}
 .logo {
   display: block;
   margin: 4px auto 0;
@@ -322,20 +327,28 @@ span.gfield_required {
   text-align: center;
 }
 .gsection .gsection_description {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "lato",sans-serif;
   font-size: 21px;
+  font-weight: 100;
   line-height: 1;
+  padding: 0 4%;
 }
 .gsection .gsection_description .my_title {
-  line-height: 1.1;
+  font-family: "Lato",sans-serif;
   font-size: 26px;
-  font-family: 'alexandriaflfregular';
+  font-weight: 100;
+  line-height: 1.2em;
+  text-transform: capitalize;
 }
-
+.gsection_description > p {
+  margin-top: 10px;
+}
 span.bevan_font {
   font-family: 'Bevan', cursive;
 }
-
+.blue_font {
+  color: #2790f9;
+}
 .secure {
   color: #fff;
   font-family: "alexandriaflfregular";
@@ -510,7 +523,7 @@ span.blue {color: #2790f9}
 }
 .review_links.fadein > p {
   color: #fff;
-  font-family: "lato";
+  font-family: "lato", sans-serif;
   font-size: 17px;
   margin-bottom: 20px;
   text-align: center;
@@ -647,7 +660,7 @@ span.blue {color: #2790f9}
   .gforms_confirmation_message {
     text-align: center;
     color: #fff;
-    font-family: "alexandriaflfregular";
+    font-family:"Lato",sans-serif;
     height: 170px;
     font-size: 25px;
     padding-top: 60px;
