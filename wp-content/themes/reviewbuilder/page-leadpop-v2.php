@@ -208,6 +208,7 @@
 				</div><!-- form -->
 			</div><!-- .form_wrap -->
 			<div class="review_links">
+				<p>Please pick your review site of choice and take a quick moment to write us a review. Tell us about your experience or about your favorite roll, drink, or waiter/waitress/bartender! We appreciate and value your feedback.</p>
 			<div class="review-sites">
 				<a href="<?php the_field('facebook_link') ?>" class="social-icon facebook"></a>
 				<a href="<?php the_field('google_link') ?>" class="social-icon google"></a>
